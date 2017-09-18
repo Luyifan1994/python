@@ -1,0 +1,1361 @@
+C:/Work/mcu-boot/bin/generator/batch
+
+run command ruby ./kboot_ide_project.rb -f projects/lpc54114.yml
+
+C:/Work/mcu-boot/bin/generator/records//projects/lpc54114.yml
+
+C:/Work/mcu-boot/bin/generator/records/kboot/flashloader_loaders/lpc54114.yml
+
+C:/Work/mcu-boot/bin/generator/records/kboot/options/lpc54114.yml
+
+C:/Work/mcu-boot/bin/generator/records/kboot/options/shared/lpc.yml
+
+C:/Work/mcu-boot/bin/generator/records/kboot/options/shared/common.yml
+
+C:/Work/mcu-boot/bin/generator/records/kboot/flashloader_loaders/common/loader.yml
+
+C:/Work/mcu-boot/bin/generator/records/kboot/bootloaders/lpc54114.yml
+
+C:/Work/mcu-boot/bin/generator/records/kboot/bootloaders/common/bootsources_lpc.yml
+
+{"flashloader_loader"=>{"iar"=>{"targets"=>{"release"=>{"cc-define"=>{"USB_STACK_BM"=>nil, "CPU_LPC54114J256BD64_cm4"=>nil, "CPU_IS_ARM_CORTEX_M4=1"=>nil, "IAR"=>nil, "BL_TARGET_FLASH"=>nil}, "cx-defi
+
+ne"=>{}, "cc-flags"=>["-Oh", "--debug", "--diag_suppress Pa039,Pe068,Pe069,Pa082,Pe177,Pe186,Pe550,Pa050", "--cpu=Cortex-M4", "--fpu=None", "--diag_suppress Pa050", "--no_unroll", "--endian=little", "
+
+-e", "--use_c++_inline", "--silent"], "cx-flags"=>["-Oh", "--diag_suppress Pa039,Pe068,Pe069,Pa082,Pe177,Pe186,Pe550,Pa050", "--cpu=Cortex-M4", "--fpu=None", "--endian=little", "-e", "--ec++", "--sile
+
+nt"], "cc-include"=>[{"path"=>"targets\\LPC54114\\iar\\flashloader\\output"}, {"path"=>"targets\\LPC54114\\src"}, {"path"=>"targets\\LPC54114\\src\\startup"}, {"path"=>"src\\platform\\devices\\LPC5411
+
+4"}, {"path"=>"src\\include"}, {"path"=>"src\\platform\\devices"}, {"path"=>"src\\platform\\CMSIS\\Include"}, {"path"=>"src"}, {"path"=>"src\\drivers"}, {"path"=>"src\\startup"}, {"path"=>"src\\driver
+
+s\\common"}], "as-flags"=>["--cpu Cortex-M4", "--fpu None", "-s", "-M'<>'", "-w+", "-r", "-S"], "cp-define"=>{"LPC54114J256_M4"=>"NXP LPC54114J256_M4"}, "ld-flags"=>["--entry Reset_Handler", "--redire
+
+ct _Printf=_PrintfTiny", "--redirect _Scanf=_ScanfSmallNoMb", "--redirect __aeabi_idiv=__iar_small___aeabi_idiv", "--redirect __aeabi_uidiv=__iar_small___aeabi_uidiv", "--redirect __aeabi_idivmod=__ia
+
+r_small___aeabi_idivmod", "--redirect __aeabi_uidivmod=__iar_small___aeabi_uidivmod"], "as-define"=>{"LITE_FOOTPRINT"=>nil}, "as-include"=>[{"path"=>"src\\include"}], "ar-flags"=>[], "ad-flags"=>[], "
+
+linker-file"=>{"path"=>"targets\\common\\linker\\iar\\LPC54114\\LPC5411x_flashloader_loader.icf"}, "binary-file"=>nil, "identifier"=>"Release", "config"=>"release", "target"=>"512kb-ram", "libraries"=
+
+>[]}, "debug"=>{"cc-flags"=>["--debug", "--diag_suppress Pa039,Pe068,Pe069,Pa082,Pe177,Pe186,Pe550,Pa050", "--cpu=Cortex-M4", "--fpu=None", "--diag_suppress Pa050", "--no_unroll", "--endian=little", "
+
+-e", "--use_c++_inline", "--silent"], "cx-flags"=>["--diag_suppress Pa039,Pe068,Pe069,Pa082,Pe177,Pe186,Pe550,Pa050", "--cpu=Cortex-M4", "--fpu=None", "--endian=little", "-e", "--ec++", "--silent"], "
+
+cc-define"=>{"DEBUG"=>nil, "USB_STACK_BM"=>nil, "CPU_LPC54114J256BD64_cm4"=>nil, "CPU_IS_ARM_CORTEX_M4=1"=>nil, "IAR"=>nil, "BL_TARGET_FLASH"=>nil}, "cx-define"=>{"DEBUG"=>nil}, "cc-include"=>[{"path"
+
+=>"targets\\LPC54114\\iar\\flashloader\\output"}, {"path"=>"targets\\LPC54114\\src"}, {"path"=>"targets\\LPC54114\\src\\startup"}, {"path"=>"src\\platform\\devices\\LPC54114"}, {"path"=>"src\\include"
+
+}, {"path"=>"src\\platform\\devices"}, {"path"=>"src\\platform\\CMSIS\\Include"}, {"path"=>"src"}, {"path"=>"src\\drivers"}, {"path"=>"src\\startup"}, {"path"=>"src\\drivers\\common"}], "as-flags"=>["
+
+--cpu Cortex-M4", "--fpu None", "-s", "-M'<>'", "-w+", "-r", "-S"], "cp-define"=>{"LPC54114J256_M4"=>"NXP LPC54114J256_M4"}, "ld-flags"=>["--entry Reset_Handler", "--redirect _Printf=_PrintfTiny", "--
+
+redirect _Scanf=_ScanfSmallNoMb", "--redirect __aeabi_idiv=__iar_small___aeabi_idiv", "--redirect __aeabi_uidiv=__iar_small___aeabi_uidiv", "--redirect __aeabi_idivmod=__iar_small___aeabi_idivmod", "-
+
+-redirect __aeabi_uidivmod=__iar_small___aeabi_uidivmod"], "as-define"=>{"LITE_FOOTPRINT"=>nil}, "as-include"=>[{"path"=>"src\\include"}], "ar-flags"=>[], "ad-flags"=>[], "linker-file"=>{"path"=>"targ
+
+ets\\common\\linker\\iar\\LPC54114\\LPC5411x_flashloader_loader.icf"}, "binary-file"=>nil, "identifier"=>"Debug", "config"=>"debug", "target"=>"512kb-ram", "libraries"=>[]}}, "type"=>"application", "t
+
+emplates"=>["templates\\iar\\bootloader\\pemicro\\generic.ewd", "templates\\iar\\bootloader\\pemicro\\generic.ewp", "templates\\iar\\bootloader\\pemicro\\generic.eww"], "outdir"=>"targets\\LPC54114/ia
+
+r/flashloader_loader", "source"=>[{"source"=>"targets\\common\\linker\\iar\\LPC54114\\LPC5411x_flashloader_loader.icf", "virtual-dir"=>"link"}, {"source"=>"src\\startup\\crt0.s", "virtual-dir"=>"src:s
+
+tartup"}, {"source"=>"targets\\LPC54114\\src\\startup\\iar\\startup_LPC54114_cm4.s", "virtual-dir"=>"src:startup"}, {"source"=>"targets\\LPC54114\\src\\startup\\system_LPC54114_cm4.c", "virtual-dir"=>
+
+"src:startup"}, {"source"=>"targets\\LPC54114\\src\\bootloader_config.h", "virtual-dir"=>"LPC54114"}, {"source"=>"src\\bootloader\\flashloader_image.h", "virtual-dir"=>"src:bootloader"}, {"source"=>"s
+
+rc\\bootloader\\src\\bl_flashloader.c", "virtual-dir"=>"src:bootloader:src"}, {"source"=>"src\\include\\bootloader_common.h", "virtual-dir"=>"src:include"}, {"source"=>"src\\startup\\startup.c", "virt
+
+ual-dir"=>"src:startup"}], "document"=>{"board"=>"flashloader_loader", "name"=>"flashloader_loader"}}, "mdk"=>{"targets"=>{"release"=>{"cc-define"=>{"USB_STACK_BM"=>nil, "CPU_LPC54114J256BD64_cm4"=>ni
+
+l, "CPU_IS_ARM_CORTEX_M4=1"=>nil, "BL_TARGET_FLASH"=>nil}, "cx-define"=>{}, "identifier"=>"Release", "target"=>"release", "cc-flags"=>["-O3", "-g", "--diag_suppress=66,1296,186,170", "--cpu Cortex-M4.
+
+fp", "--split_sections"], "cx-flags"=>["-O3", "--cpu Cortex-M4.fp"], "cc-include"=>[{"path"=>"targets\\LPC54114\\mdk\\flashloader\\output"}, {"path"=>"targets\\LPC54114\\src"}, {"path"=>"targets\\LPC5
+
+4114\\src\\startup"}, {"path"=>"src\\platform\\devices\\LPC54114"}, {"path"=>"src\\include"}, {"path"=>"src\\platform\\devices"}, {"path"=>"src\\platform\\CMSIS\\Include"}, {"path"=>"src"}, {"path"=>"
+
+src\\drivers"}, {"path"=>"src\\startup"}, {"path"=>"src\\drivers\\common"}], "ad-flags"=>["--predefine=\"-D__stack_size__=0x200\"", "--predefine=\"-D__heap_size__=0x200\""], "as-define"=>{"BL_HAS_BOOT
+
+LOADER_CONFIG=0"=>nil, "LITE_FOOTPRINT"=>nil}, "as-flags"=>["--cpu Cortex-M4.fp"], "ld-flags"=>["--cpu Cortex-M4.fp", "--map", "--xref", "--callgraph", "--symbols", "--info sizes", "--info totals", "-
+
+-info unused", "--info veneers", "--strict", "--datacompressor off", "--remove", "--feedback_type=unused,noiw"], "cp-define"=>{"LPC54114J256_M4"=>"NXP LPC54114J256_M4"}, "as-include"=>[{"path"=>"src\\
+
+include"}], "ar-flags"=>[], "linker-file"=>{"path"=>"targets\\common\\linker\\arm\\LPC54114\\LPC5411x_flashloader_loader.scf"}, "binary-file"=>nil, "config"=>"release", "libraries"=>[]}, "debug"=>{"id
+
+entifier"=>"Debug", "target"=>"debug", "cc-flags"=>["-g", "--diag_suppress=66,1296,186,170", "--cpu Cortex-M4.fp", "--split_sections"], "cx-flags"=>["--cpu Cortex-M4.fp"], "cc-define"=>{"DEBUG"=>nil, 
+
+"USB_STACK_BM"=>nil, "CPU_LPC54114J256BD64_cm4"=>nil, "CPU_IS_ARM_CORTEX_M4=1"=>nil, "BL_TARGET_FLASH"=>nil}, "cx-define"=>{"DEBUG"=>nil}, "cc-include"=>[{"path"=>"targets\\LPC54114\\mdk\\flashloader\
+
+\output"}, {"path"=>"targets\\LPC54114\\src"}, {"path"=>"targets\\LPC54114\\src\\startup"}, {"path"=>"src\\platform\\devices\\LPC54114"}, {"path"=>"src\\include"}, {"path"=>"src\\platform\\devices"}, 
+
+{"path"=>"src\\platform\\CMSIS\\Include"}, {"path"=>"src"}, {"path"=>"src\\drivers"}, {"path"=>"src\\startup"}, {"path"=>"src\\drivers\\common"}], "ad-flags"=>["--predefine=\"-D__stack_size__=0x200\""
+
+, "--predefine=\"-D__heap_size__=0x200\""], "as-define"=>{"BL_HAS_BOOTLOADER_CONFIG=0"=>nil, "LITE_FOOTPRINT"=>nil}, "as-flags"=>["--cpu Cortex-M4.fp"], "ld-flags"=>["--cpu Cortex-M4.fp", "--map", "--
+
+xref", "--callgraph", "--symbols", "--info sizes", "--info totals", "--info unused", "--info veneers", "--strict", "--datacompressor off", "--remove", "--feedback_type=unused,noiw"], "cp-define"=>{"LP
+
+C54114J256_M4"=>"NXP LPC54114J256_M4"}, "as-include"=>[{"path"=>"src\\include"}], "ar-flags"=>[], "linker-file"=>{"path"=>"targets\\common\\linker\\arm\\LPC54114\\LPC5411x_flashloader_loader.scf"}, "b
+
+inary-file"=>nil, "config"=>"debug", "libraries"=>[]}}, "type"=>"application", "templates"=>["templates\\mdk\\bootloader\\LPC54114\\LPC54114.uvprojx", "templates\\mdk\\bootloader\\LPC54114\\pemicro_co
+
+nnection_settings.ini"], "outdir"=>"targets\\LPC54114/mdk/flashloader_loader", "source"=>[{"source"=>"targets\\common\\linker\\arm\\LPC54114\\LPC5411x_flashloader_loader.scf", "virtual-dir"=>"link"}, 
+
+{"source"=>"targets\\LPC54114\\src\\startup\\arm\\startup_LPC54114_cm4.s", "virtual-dir"=>"src:startup"}, {"source"=>"targets\\LPC54114\\src\\startup\\system_LPC54114_cm4.c", "virtual-dir"=>"src:start
+
+up"}, {"source"=>"targets\\LPC54114\\src\\bootloader_config.h", "virtual-dir"=>"LPC54114"}, {"source"=>"src\\bootloader\\flashloader_image.h", "virtual-dir"=>"src:bootloader"}, {"source"=>"src\\bootlo
+
+ader\\src\\bl_flashloader.c", "virtual-dir"=>"src:bootloader:src"}, {"source"=>"src\\include\\bootloader_common.h", "virtual-dir"=>"src:include"}, {"source"=>"src\\startup\\startup.c", "virtual-dir"=>
+
+"src:startup"}], "document"=>{"board"=>"flashloader_loader", "name"=>"flashloader_loader"}}, "kds"=>{"targets"=>{"release"=>{"cc-define"=>{"USB_STACK_BM"=>nil, "CPU_LPC54114J256BD64_cm4"=>nil, "CPU_IS
+
+_ARM_CORTEX_M4=1"=>nil, "BL_TARGET_FLASH"=>nil}, "cx-define"=>{}, "identifier"=>"Release", "target"=>"release", "cc-flags"=>["-Os", "-g", "-mcpu=cortex-m4", "-mfloat-abi=hard", "-mfpu=fpv4-sp-d16", "-
+
+Wall", "-fno-common", "-ffunction-sections", "-fdata-sections", "-ffreestanding", "-fno-builtin", "-fshort-wchar", "-mthumb", "-mapcs", "-std=gnu99", "-flto", "-fno-inline-small-functions"], "cx-flags
+
+"=>["-Os", "-g", "-mcpu=cortex-m4", "-Wall", "-mfloat-abi=hard", "-mfpu=fpv4-sp-d16"], "as-flags"=>["-Os", "-mcpu=cortex-m4", "-Wall", "-mfloat-abi=hard", "-mfpu=fpv4-sp-d16", "-fno-common", "-ffuncti
+
+on-sections", "-fdata-sections", "-ffreestanding", "-fno-builtin", "-fshort-wchar", "-mthumb", "-mapcs", "-std=gnu99"], "ld-flags"=>["-Os", "-g", "-mfloat-abi=hard", "-mfpu=fpv4-sp-d16", "--specs=nano
+
+.specs", "-lm", "-lg", "-lgcc", "-lnosys", "-Wall", "-fno-common", "-ffunction-sections", "-fdata-sections", "-ffreestanding", "-fno-builtin", "-fshort-wchar -Wl,--no-wchar-size-warning", "-mthumb", "
+
+-mapcs", "-Xlinker --gc-sections", "-Xlinker -static", "-Xlinker -z", "-Xlinker muldefs", "-flto"], "cc-include"=>[{"path"=>"targets\\LPC54114\\kds\\flashloader"}, {"path"=>"targets\\LPC54114\\src"}, 
+
+{"path"=>"targets\\LPC54114\\src\\startup"}, {"path"=>"src\\platform\\devices\\LPC54114"}, {"path"=>"src\\include"}, {"path"=>"src\\platform\\devices"}, {"path"=>"src\\platform\\CMSIS\\Include"}, {"pa
+
+th"=>"src"}, {"path"=>"src\\drivers"}, {"path"=>"src\\startup"}, {"path"=>"src\\drivers\\common"}], "ad-flags"=>["-Xlinker --defsym=__stack_size__=0x200", "-Xlinker --defsym=__heap_size__=0x200"], "cp
+
+-define"=>{"LPC54114J256_M4"=>"NXP LPC54114J256_M4"}, "as-define"=>{"LITE_FOOTPRINT"=>nil}, "as-include"=>[{"path"=>"src\\include"}], "ar-flags"=>[], "linker-file"=>{"path"=>"targets\\common\\linker\\
+
+kds\\LPC54114\\LPC5411x_flashloader_loader.ld"}, "binary-file"=>nil, "config"=>"release", "libraries"=>[]}, "debug"=>{"identifier"=>"Debug", "target"=>"debug", "cc-flags"=>["-g", "-mcpu=cortex-m4", "-
+
+mfloat-abi=hard", "-mfpu=fpv4-sp-d16", "-Wall", "-fno-common", "-ffunction-sections", "-fdata-sections", "-ffreestanding", "-fno-builtin", "-fshort-wchar", "-mthumb", "-mapcs", "-std=gnu99", "-flto", 
+
+"-fno-inline-small-functions"], "cx-flags"=>["-g", "-mcpu=cortex-m4", "-Wall", "-mfloat-abi=hard", "-mfpu=fpv4-sp-d16"], "ld-flags"=>["-g", "-mfloat-abi=hard", "-mfpu=fpv4-sp-d16", "--specs=nano.specs
+
+", "-lm", "-lg", "-lgcc", "-lnosys", "-Wall", "-fno-common", "-ffunction-sections", "-fdata-sections", "-ffreestanding", "-fno-builtin", "-fshort-wchar -Wl,--no-wchar-size-warning", "-mthumb", "-mapcs
+
+", "-Xlinker --gc-sections", "-Xlinker -static", "-Xlinker -z", "-Xlinker muldefs", "-flto"], "cc-define"=>{"DEBUG"=>nil, "USB_STACK_BM"=>nil, "CPU_LPC54114J256BD64_cm4"=>nil, "CPU_IS_ARM_CORTEX_M4=1"
+
+=>nil, "BL_TARGET_FLASH"=>nil}, "cx-define"=>{"DEBUG"=>nil}, "cc-include"=>[{"path"=>"targets\\LPC54114\\kds\\flashloader"}, {"path"=>"targets\\LPC54114\\src"}, {"path"=>"targets\\LPC54114\\src\\start
+
+up"}, {"path"=>"src\\platform\\devices\\LPC54114"}, {"path"=>"src\\include"}, {"path"=>"src\\platform\\devices"}, {"path"=>"src\\platform\\CMSIS\\Include"}, {"path"=>"src"}, {"path"=>"src\\drivers"}, 
+
+{"path"=>"src\\startup"}, {"path"=>"src\\drivers\\common"}], "ad-flags"=>["-Xlinker --defsym=__stack_size__=0x200", "-Xlinker --defsym=__heap_size__=0x200"], "as-flags"=>["-mcpu=cortex-m4", "-Wall", "
+
+-mfloat-abi=hard", "-mfpu=fpv4-sp-d16", "-fno-common", "-ffunction-sections", "-fdata-sections", "-ffreestanding", "-fno-builtin", "-fshort-wchar", "-mthumb", "-mapcs", "-std=gnu99"], "cp-define"=>{"L
+
+PC54114J256_M4"=>"NXP LPC54114J256_M4"}, "as-define"=>{"LITE_FOOTPRINT"=>nil}, "as-include"=>[{"path"=>"src\\include"}], "ar-flags"=>[], "linker-file"=>{"path"=>"targets\\common\\linker\\kds\\LPC54114
+
+\\LPC5411x_flashloader_loader.ld"}, "binary-file"=>nil, "config"=>"debug", "libraries"=>[]}}, "type"=>"application", "templates"=>["templates/kds/bootloader/LPC54114/.cproject", "templates/kds/bootloa
+
+der/LPC54114/.project", "templates/kds/bootloader/LPC54114/Debug Jlink.launch", "templates/kds/bootloader/LPC54114/Release Jlink.launch", "templates/kds/bootloader/LPC54114/Debug PNE.launch", "templat
+
+es/kds/bootloader/LPC54114/Release PNE.launch", "templates/kds/bootloader/LPC54114/Debug CMSISDAP.launch", "templates/kds/bootloader/LPC54114/Release CMSISDAP.launch"], "outdir"=>"targets\\LPC54114/kd
+
+s/flashloader_loader", "source"=>[{"source"=>"targets\\common\\linker\\kds\\LPC54114\\LPC5411x_flashloader_loader.ld", "virtual-dir"=>"link"}, {"source"=>"src\\startup\\crt0_gcc.S", "virtual-dir"=>"sr
+
+c:startup"}, {"source"=>"src\\memory\\src\\pattern_fill_gcc.S", "virtual-dir"=>"src:memory:src"}, {"source"=>"targets\\LPC54114\\src\\startup\\gcc\\startup_LPC54114_cm4.S", "virtual-dir"=>"src:startup
+
+"}, {"source"=>"targets\\LPC54114\\src\\startup\\system_LPC54114_cm4.c", "virtual-dir"=>"src:startup"}, {"source"=>"targets\\LPC54114\\src\\bootloader_config.h", "virtual-dir"=>"LPC54114"}, {"source"=
+
+>"src\\bootloader\\flashloader_image.h", "virtual-dir"=>"src:bootloader"}, {"source"=>"src\\bootloader\\src\\bl_flashloader.c", "virtual-dir"=>"src:bootloader:src"}, {"source"=>"src\\include\\bootload
+
+er_common.h", "virtual-dir"=>"src:include"}, {"source"=>"src\\startup\\startup.c", "virtual-dir"=>"src:startup"}], "document"=>{"board"=>"flashloader_loader", "name"=>"flashloader_loader"}}, "mcux"=>{
+
+"targets"=>{"release"=>{"cc-define"=>{"USB_STACK_BM"=>nil, "CPU_LPC54114J256BD64_cm4"=>nil, "CPU_IS_ARM_CORTEX_M4=1"=>nil, "BL_TARGET_FLASH"=>nil}, "cx-define"=>{}, "cc-flags"=>["-Os", "-g", "-mcpu=co
+
+rtex-m4", "-mfloat-abi=hard", "-mfpu=fpv4-sp-d16", "-Wall", "-fno-common", "-ffunction-sections", "-fdata-sections", "-ffreestanding", "-fno-builtin", "-fshort-wchar", "-mthumb", "-mapcs", "-std=gnu99
+
+", "-flto", "-fno-inline-small-functions"], "cx-flags"=>["-Os", "-g", "-mcpu=cortex-m4", "-Wall", "-mfloat-abi=hard", "-mfpu=fpv4-sp-d16"], "as-flags"=>["-Os", "-mcpu=cortex-m4", "-Wall", "-mfloat-abi
+
+=hard", "-mfpu=fpv4-sp-d16", "-fno-common", "-ffunction-sections", "-fdata-sections", "-ffreestanding", "-fno-builtin", "-fshort-wchar", "-mthumb", "-mapcs", "-std=gnu99"], "ld-flags"=>["-Os", "-g", "
+
+-mcpu=cortex-m4", "-mfloat-abi=hard", "-mfpu=fpv4-sp-d16", "--specs=nano.specs", "-lm", "-lg", "-lgcc", "-lnosys", "-Wall", "-fno-common", "-ffunction-sections", "-fdata-sections", "-ffreestanding", "
+
+-fno-builtin", "-fshort-wchar -Wl,--no-wchar-size-warning", "-mthumb", "-mapcs", "-Xlinker --gc-sections", "-Xlinker -static", "-Xlinker -z", "-Xlinker muldefs", "-flto"], "ad-flags"=>["-Xlinker --def
+
+sym=__stack_size__=0x200", "-Xlinker --defsym=__heap_size__=0x200"], "cp-define"=>{"LPC54114J256_M4"=>"NXP LPC54114J256_M4"}, "cc-include"=>[{"path"=>"targets\\LPC54114\\src"}, {"path"=>"targets\\LPC5
+
+4114\\src\\startup"}, {"path"=>"src\\platform\\devices\\LPC54114"}, {"path"=>"src\\include"}, {"path"=>"src\\platform\\devices"}, {"path"=>"src\\platform\\CMSIS\\Include"}, {"path"=>"src"}, {"path"=>"
+
+src\\drivers"}, {"path"=>"src\\startup"}, {"path"=>"src\\drivers\\common"}], "as-define"=>{"LITE_FOOTPRINT"=>nil}, "as-include"=>[{"path"=>"src\\include"}], "ar-flags"=>[], "binary-file"=>nil, "identi
+
+fier"=>"Release", "config"=>"release", "target"=>"release", "libraries"=>[]}, "debug"=>{"cc-flags"=>["-g", "-mcpu=cortex-m4", "-mfloat-abi=hard", "-mfpu=fpv4-sp-d16", "-Wall", "-fno-common", "-ffuncti
+
+on-sections", "-fdata-sections", "-ffreestanding", "-fno-builtin", "-fshort-wchar", "-mthumb", "-mapcs", "-std=gnu99", "-flto", "-fno-inline-small-functions"], "cx-flags"=>["-g", "-mcpu=cortex-m4", "-
+
+Wall", "-mfloat-abi=hard", "-mfpu=fpv4-sp-d16"], "ld-flags"=>["-g", "-mcpu=cortex-m4", "-mfloat-abi=hard", "-mfpu=fpv4-sp-d16", "--specs=nano.specs", "-lm", "-lg", "-lgcc", "-lnosys", "-Wall", "-fno-c
+
+ommon", "-ffunction-sections", "-fdata-sections", "-ffreestanding", "-fno-builtin", "-fshort-wchar -Wl,--no-wchar-size-warning", "-mthumb", "-mapcs", "-Xlinker --gc-sections", "-Xlinker -static", "-Xl
+
+inker -z", "-Xlinker muldefs", "-flto"], "cc-define"=>{"DEBUG"=>nil, "USB_STACK_BM"=>nil, "CPU_LPC54114J256BD64_cm4"=>nil, "CPU_IS_ARM_CORTEX_M4=1"=>nil, "BL_TARGET_FLASH"=>nil}, "cx-define"=>{"DEBUG"
+
+=>nil}, "ad-flags"=>["-Xlinker --defsym=__stack_size__=0x200", "-Xlinker --defsym=__heap_size__=0x200"], "as-flags"=>["-mcpu=cortex-m4", "-Wall", "-mfloat-abi=hard", "-mfpu=fpv4-sp-d16", "-fno-common"
+
+, "-ffunction-sections", "-fdata-sections", "-ffreestanding", "-fno-builtin", "-fshort-wchar", "-mthumb", "-mapcs", "-std=gnu99"], "cp-define"=>{"LPC54114J256_M4"=>"NXP LPC54114J256_M4"}, "cc-include"
+
+=>[{"path"=>"targets\\LPC54114\\src"}, {"path"=>"targets\\LPC54114\\src\\startup"}, {"path"=>"src\\platform\\devices\\LPC54114"}, {"path"=>"src\\include"}, {"path"=>"src\\platform\\devices"}, {"path"=
+
+>"src\\platform\\CMSIS\\Include"}, {"path"=>"src"}, {"path"=>"src\\drivers"}, {"path"=>"src\\startup"}, {"path"=>"src\\drivers\\common"}], "as-define"=>{"LITE_FOOTPRINT"=>nil}, "as-include"=>[{"path"=
+
+>"src\\include"}], "ar-flags"=>[], "binary-file"=>nil, "identifier"=>"Debug", "config"=>"debug", "target"=>"debug", "libraries"=>[]}}, "type"=>"application", "templates"=>nil, "outdir"=>"targets\\LPC5
+
+4114/mcux/flashloader_loader", "source"=>[{"source"=>nil, "virtual-dir"=>nil}, {"source"=>"targets\\LPC54114\\src\\bootloader_config.h", "virtual-dir"=>"LPC54114"}, {"source"=>"src\\bootloader\\flashl
+
+oader_image.h", "virtual-dir"=>"src:bootloader"}, {"source"=>"src\\bootloader\\src\\bl_flashloader.c", "virtual-dir"=>"src:bootloader:src"}, {"source"=>"src\\include\\bootloader_common.h", "virtual-di
+
+r"=>"src:include"}, {"source"=>"src\\startup\\startup.c", "virtual-dir"=>"src:startup"}], "document"=>{"board"=>"flashloader_loader", "name"=>"flashloader_loader"}}}, "lpcxpresso_bootloader"=>{"iar"=>
+
+{"targets"=>{"debug"=>{"cc-define"=>{"DEBUG"=>nil, "USB_STACK_BM"=>nil, "CPU_LPC54114J256BD64_cm4"=>nil, "CPU_IS_ARM_CORTEX_M4=1"=>nil, "IAR"=>nil, "LPCXPRESSO"=>nil, "BL_TARGET_FLASH"=>nil}, "cx-defi
+
+ne"=>{"DEBUG"=>nil}, "as-define"=>{"DEBUG"=>nil}, "cc-flags"=>["--debug", "--diag_suppress Pa039,Pe068,Pe069,Pa082,Pe177,Pe186,Pe550,Pa050", "--cpu=Cortex-M4", "--fpu=None", "--diag_suppress Pa050", "
+
+--no_unroll", "--endian=little", "-e", "--use_c++_inline", "--silent"], "cx-flags"=>["--diag_suppress Pa039,Pe068,Pe069,Pa082,Pe177,Pe186,Pe550,Pa050", "--cpu=Cortex-M4", "--fpu=None", "--endian=littl
+
+e", "-e", "--ec++", "--silent"], "as-flags"=>["--cpu Cortex-M4", "--fpu None", "-s", "-M'<>'", "-w+", "-r", "-S"], "cp-define"=>{"LPC54114J256_M4"=>"NXP LPC54114J256_M4"}, "ld-flags"=>["--entry Reset_
+
+Handler", "--redirect _Printf=_PrintfTiny", "--redirect _Scanf=_ScanfSmallNoMb", "--redirect __aeabi_idiv=__iar_small___aeabi_idiv", "--redirect __aeabi_uidiv=__iar_small___aeabi_uidiv", "--redirect _
+
+_aeabi_idivmod=__iar_small___aeabi_idivmod", "--redirect __aeabi_uidivmod=__iar_small___aeabi_uidivmod"], "cc-include"=>[{"path"=>"targets\\LPC54114\\src"}, {"path"=>"targets\\LPC54114\\src\\startup"}
+
+, {"path"=>"src\\platform\\devices\\LPC54114"}, {"path"=>"src\\autobaud"}, {"path"=>"src\\usb\\include"}, {"path"=>"src\\usb\\osa"}, {"path"=>"src\\usb\\device"}, {"path"=>"src\\usb\\device\\class"}, 
+
+{"path"=>"src\\bm_usb"}, {"path"=>"src\\include"}, {"path"=>"src\\platform"}, {"path"=>"src\\platform\\devices"}, {"path"=>"src\\platform\\CMSIS\\Include"}, {"path"=>"src"}, {"path"=>"src\\drivers"}, 
+
+{"path"=>"src\\startup"}, {"path"=>"src\\drivers\\common"}], "as-include"=>[{"path"=>"src\\include"}], "ar-flags"=>[], "ad-flags"=>[], "linker-file"=>{"path"=>"targets\\common\\linker\\iar\\LPC54114\\
+
+LPC5411x_flash_bootloader.icf"}, "binary-file"=>nil, "identifier"=>"Debug", "config"=>"debug", "target"=>"512kb-ram", "libraries"=>[]}, "release"=>{"cc-define"=>{"NDEBUG"=>nil, "USB_STACK_BM"=>nil, "C
+
+PU_LPC54114J256BD64_cm4"=>nil, "CPU_IS_ARM_CORTEX_M4=1"=>nil, "IAR"=>nil, "LPCXPRESSO"=>nil, "BL_TARGET_FLASH"=>nil}, "cx-define"=>{"NDEBUG"=>nil}, "as-define"=>{"NDEBUG"=>nil}, "cc-flags"=>["-Oh", "-
+
+-debug", "--diag_suppress Pa039,Pe068,Pe069,Pa082,Pe177,Pe186,Pe550,Pa050", "--cpu=Cortex-M4", "--fpu=None", "--diag_suppress Pa050", "--no_unroll", "--endian=little", "-e", "--use_c++_inline", "--sil
+
+ent"], "cx-flags"=>["-Oh", "--diag_suppress Pa039,Pe068,Pe069,Pa082,Pe177,Pe186,Pe550,Pa050", "--cpu=Cortex-M4", "--fpu=None", "--endian=little", "-e", "--ec++", "--silent"], "as-flags"=>["--cpu Corte
+
+x-M4", "--fpu None", "-s", "-M'<>'", "-w+", "-r", "-S"], "cp-define"=>{"LPC54114J256_M4"=>"NXP LPC54114J256_M4"}, "ld-flags"=>["--entry Reset_Handler", "--redirect _Printf=_PrintfTiny", "--redirect _S
+
+canf=_ScanfSmallNoMb", "--redirect __aeabi_idiv=__iar_small___aeabi_idiv", "--redirect __aeabi_uidiv=__iar_small___aeabi_uidiv", "--redirect __aeabi_idivmod=__iar_small___aeabi_idivmod", "--redirect _
+
+_aeabi_uidivmod=__iar_small___aeabi_uidivmod"], "cc-include"=>[{"path"=>"targets\\LPC54114\\src"}, {"path"=>"targets\\LPC54114\\src\\startup"}, {"path"=>"src\\platform\\devices\\LPC54114"}, {"path"=>"
+
+src\\autobaud"}, {"path"=>"src\\usb\\include"}, {"path"=>"src\\usb\\osa"}, {"path"=>"src\\usb\\device"}, {"path"=>"src\\usb\\device\\class"}, {"path"=>"src\\bm_usb"}, {"path"=>"src\\include"}, {"path"
+
+=>"src\\platform"}, {"path"=>"src\\platform\\devices"}, {"path"=>"src\\platform\\CMSIS\\Include"}, {"path"=>"src"}, {"path"=>"src\\drivers"}, {"path"=>"src\\startup"}, {"path"=>"src\\drivers\\common"}
+
+], "as-include"=>[{"path"=>"src\\include"}], "ar-flags"=>[], "ad-flags"=>[], "linker-file"=>{"path"=>"targets\\common\\linker\\iar\\LPC54114\\LPC5411x_flash_bootloader.icf"}, "binary-file"=>nil, "iden
+
+tifier"=>"Release", "config"=>"release", "target"=>"512kb-ram", "libraries"=>[]}}, "type"=>"application", "templates"=>["templates\\iar\\bootloader\\pemicro\\generic.ewd", "templates\\iar\\bootloader\
+
+\pemicro\\generic.ewp", "templates\\iar\\bootloader\\pemicro\\generic.eww"], "outdir"=>"targets\\LPC54114/iar/lpcxpresso_bootloader", "source"=>[{"source"=>"targets\\common\\linker\\iar\\LPC54114\\LPC
+
+5411x_flash_bootloader.icf", "virtual-dir"=>"link"}, {"source"=>"src\\startup\\crt0.s", "virtual-dir"=>"src:startup"}, {"source"=>"targets\\LPC54114\\src\\startup\\iar\\startup_LPC54114_cm4.s", "virtu
+
+al-dir"=>"src:startup"}, {"source"=>"targets\\LPC54114\\src\\startup\\system_LPC54114_cm4.c", "virtual-dir"=>"src:startup"}, {"source"=>"targets\\LPC54114\\src\\bootloader_config.h", "virtual-dir"=>"L
+
+PC54114"}, {"source"=>"targets\\LPC54114\\src\\clock_config_LPC54114.c", "virtual-dir"=>"LPC54114"}, {"source"=>"targets\\LPC54114\\src\\hardware_init_LPC54114.c", "virtual-dir"=>"LPC54114"}, {"source
+
+"=>"targets\\LPC54114\\src\\memory_map_LPC54114.c", "virtual-dir"=>"LPC54114"}, {"source"=>"targets\\LPC54114\\src\\peripherals_LPC54114.c", "virtual-dir"=>"LPC54114"}, {"source"=>"targets\\LPC54114\\
+
+src\\peripherals_pinmux.h", "virtual-dir"=>"LPC54114"}, {"source"=>"targets\\LPC54114\\src\\target_config.h", "virtual-dir"=>"LPC54114"}, {"source"=>"targets\\common\\src\\pinmux_utility_lpc.c", "virt
+
+ual-dir"=>"LPC54114"}, {"source"=>"targets\\common\\src\\bl_flexcomm_usart_irq_config_common.c", "virtual-dir"=>"LPC54114"}, {"source"=>"targets\\common\\src\\bl_flexcomm_i2c_irq_config_common.c", "vi
+
+rtual-dir"=>"LPC54114"}, {"source"=>"targets\\common\\src\\bl_flexcomm_spi_irq_config_common.c", "virtual-dir"=>"LPC54114"}, {"source"=>"src\\autobaud\\src\\autobaud_irq.c", "virtual-dir"=>"src:autoba
+
+ud:src"}, {"source"=>"src\\bootloader\\bl_app_crc_check.h", "virtual-dir"=>"src:bootloader"}, {"source"=>"src\\bootloader\\src\\flexcomm_usart_peripheral_interface.c", "virtual-dir"=>"src:bootloader:s
+
+rc"}, {"source"=>"src\\bootloader\\src\\flexcomm_i2c_peripheral_interface.c", "virtual-dir"=>"src:bootloader:src"}, {"source"=>"src\\bootloader\\src\\flexcomm_spi_peripheral_interface.c", "virtual-dir
+
+"=>"src:bootloader:src"}, {"source"=>"src\\bootloader\\src\\usb_hid_msc_peripheral_interface.c", "virtual-dir"=>"src:bootloader:src"}, {"source"=>"src\\bootloader\\src\\bl_app_crc_check.c", "virtual-d
+
+ir"=>"src:bootloader:src"}, {"source"=>"src\\bootloader\\src\\bl_misc.c", "virtual-dir"=>"src:bootloader:src"}, {"source"=>"src\\bootloader\\src\\bl_reliable_update.c", "virtual-dir"=>"src:bootloader:
+
+src"}, {"source"=>"src\\drivers\\lpc_crc\\fsl_crc.c", "virtual-dir"=>"src:drivers:crc"}, {"source"=>"src\\drivers\\microseconds\\src\\microseconds_sysclk.c", "virtual-dir"=>"src:drivers:microseconds:s
+
+rc"}, {"source"=>"src\\drivers\\flexcomm\\fsl_flexcomm.c", "virtual-dir"=>"src:drivers:flexcomm"}, {"source"=>"src\\drivers\\flexcomm\\fsl_usart.c", "virtual-dir"=>"src:drivers:flexcomm"}, {"source"=>
+
+"src\\drivers\\flexcomm\\fsl_i2c.c", "virtual-dir"=>"src:drivers:flexcomm"}, {"source"=>"src\\drivers\\flexcomm\\fsl_spi.c", "virtual-dir"=>"src:drivers:flexcomm"}, {"source"=>"src\\memory\\src\\sram_
+
+init_lpc.c", "virtual-dir"=>"src:memory:src"}, {"source"=>"src\\platform\\devices\\LPC54114\\fsl_clock.c", "virtual-dir"=>"src:platform"}, {"source"=>"src\\platform\\devices\\LPC54114\\fsl_power.c", "
+
+virtual-dir"=>"src:platform"}, {"source"=>"src\\platform\\devices\\LPC54114\\fsl_power_lib\\fsl_power_lib.c", "virtual-dir"=>"src:platform"}, {"source"=>"src\\platform\\devices\\LPC54114\\fsl_reset.c"
+
+, "virtual-dir"=>"src:platform"}, {"source"=>"src\\usb\\device\\class\\usb_device_class.h", "virtual-dir"=>"src:usb:device:calss"}, {"source"=>"src\\usb\\device\\class\\usb_device_class.c", "virtual-d
+
+ir"=>"src:usb:device:calss"}, {"source"=>"src\\usb\\device\\class\\usb_device_hid.h", "virtual-dir"=>"src:usb:device:calss"}, {"source"=>"src\\usb\\device\\class\\usb_device_hid.c", "virtual-dir"=>"sr
+
+c:usb:device:calss"}, {"source"=>"src\\usb\\device\\class\\usb_device_msc.h", "virtual-dir"=>"src:usb:device:calss"}, {"source"=>"src\\usb\\device\\class\\usb_device_msc.c", "virtual-dir"=>"src:usb:de
+
+vice:calss"}, {"source"=>"src\\usb\\device\\class\\usb_device_msc_ufi.h", "virtual-dir"=>"src:usb:device:calss"}, {"source"=>"src\\usb\\device\\class\\usb_device_msc_ufi.c", "virtual-dir"=>"src:usb:de
+
+vice:calss"}, {"source"=>"src\\usb\\device\\usb_device.h", "virtual-dir"=>"src:usb:device"}, {"source"=>"src\\usb\\device\\usb_device_ch9.c", "virtual-dir"=>"src:usb:device"}, {"source"=>"src\\usb\\de
+
+vice\\usb_device_ch9.h", "virtual-dir"=>"src:usb:device"}, {"source"=>"src\\usb\\device\\usb_device_dci.c", "virtual-dir"=>"src:usb:device"}, {"source"=>"src\\usb\\device\\usb_device_dci.h", "virtual-
+
+dir"=>"src:usb:device"}, {"source"=>"src\\usb\\device\\usb_device_lpcip3511.c", "virtual-dir"=>"src:usb:device"}, {"source"=>"src\\usb\\device\\usb_device_lpcip3511.h", "virtual-dir"=>"src:usb:device"
+
+}, {"source"=>"src\\usb\\include\\usb.h", "virtual-dir"=>"src:usb:include"}, {"source"=>"src\\usb\\osa\\usb_osa.h", "virtual-dir"=>"src:usb:osa"}, {"source"=>"src\\usb\\osa\\usb_osa_bm.h", "virtual-di
+
+r"=>"src:usb:osa"}, {"source"=>"src\\usb\\osa\\usb_osa_bm.c", "virtual-dir"=>"src:usb:osa"}, {"source"=>"src\\bm_usb\\bootloader_hid_report_ids.h", "virtual-dir"=>"src:usb:bm_composite"}, {"source"=>"
+
+src\\bm_usb\\fat_directory_entry.h", "virtual-dir"=>"src:usb:bm_composite"}, {"source"=>"src\\bm_usb\\composite.h", "virtual-dir"=>"src:usb:bm_composite"}, {"source"=>"src\\bm_usb\\composite.c", "virt
+
+ual-dir"=>"src:usb:bm_composite"}, {"source"=>"src\\bm_usb\\hid_bootloader.h", "virtual-dir"=>"src:usb:bm_composite"}, {"source"=>"src\\bm_usb\\hid_bootloader.c", "virtual-dir"=>"src:usb:bm_composite"
+
+}, {"source"=>"src\\bm_usb\\msc_disk.h", "virtual-dir"=>"src:usb:bm_composite"}, {"source"=>"src\\bm_usb\\msc_disk.c", "virtual-dir"=>"src:usb:bm_composite"}, {"source"=>"src\\bm_usb\\usb_descriptor.h
+
+", "virtual-dir"=>"src:usb:bm_composite"}, {"source"=>"src\\bm_usb\\usb_descriptor.c", "virtual-dir"=>"src:usb:bm_composite"}, {"source"=>"targets\\LPC54114\\src\\usb_device_config.h", "virtual-dir"=>
+
+"src:usb:bm_composite"}, {"source"=>"src\\autobaud\\autobaud.h", "virtual-dir"=>"src:autobaud"}, {"source"=>"src\\bootloader\\bl_peripheral_interface.h", "virtual-dir"=>"src:bootloader"}, {"source"=>"
+
+src\\bootloader\\bl_user_entry.h", "virtual-dir"=>"src:bootloader"}, {"source"=>"src\\bootloader\\bl_version.h", "virtual-dir"=>"src:bootloader"}, {"source"=>"src\\bootloader\\bootloader.h", "virtual-
+
+dir"=>"src:bootloader"}, {"source"=>"src\\bootloader\\bl_command.h", "virtual-dir"=>"src:bootloader"}, {"source"=>"src\\bootloader\\bl_context.h", "virtual-dir"=>"src:bootloader"}, {"source"=>"src\\bo
+
+otloader\\bl_peripheral.h", "virtual-dir"=>"src:bootloader"}, {"source"=>"src\\bootloader\\bl_shutdown_cleanup.h", "virtual-dir"=>"src:bootloader"}, {"source"=>"src\\bootloader\\src\\bl_user_entry.c",
+
+ "virtual-dir"=>"src:bootloader:src"}, {"source"=>"src\\bootloader\\src\\bl_main.c", "virtual-dir"=>"src:bootloader:src"}, {"source"=>"src\\bootloader\\src\\bl_context.c", "virtual-dir"=>"src:bootload
+
+er:src"}, {"source"=>"src\\bootloader\\src\\bl_exception_handler.c", "virtual-dir"=>"src:bootloader:src"}, {"source"=>"src\\bootloader\\src\\bl_tree_root.c", "virtual-dir"=>"src:bootloader:src"}, {"so
+
+urce"=>"src\\bootloader\\src\\bl_command.c", "virtual-dir"=>"src:bootloader:src"}, {"source"=>"src\\bootloader\\src\\bl_shutdown_cleanup.c", "virtual-dir"=>"src:bootloader:src"}, {"source"=>"src\\crc\
+
+\crc16.h", "virtual-dir"=>"src:crc"}, {"source"=>"src\\crc\\crc32.h", "virtual-dir"=>"src:crc"}, {"source"=>"src\\crc\\src\\crc16.c", "virtual-dir"=>"src:crc:src"}, {"source"=>"src\\crc\\src\\crc32.c"
+
+, "virtual-dir"=>"src:crc:src"}, {"source"=>"src\\drivers\\lpc_iocon\\fsl_iocon.h", "virtual-dir"=>"src:drivers:iocon"}, {"source"=>"src\\drivers\\lpc_gpio\\fsl_gpio.c", "virtual-dir"=>"src:drivers:gp
+
+io"}, {"source"=>"src\\drivers\\gint\\fsl_gint.c", "virtual-dir"=>"src:drivers:gint"}, {"source"=>"src\\drivers\\flashiap\\fsl_flashiap.c", "virtual-dir"=>"src:drivers:flashiap"}, {"source"=>"src\\dri
+
+vers\\flashiap\\fsl_flashiap.h", "virtual-dir"=>"src:drivers:flashiap"}, {"source"=>"src\\drivers\\flashiap_wrapper\\fsl_flashiap_wrapper.c", "virtual-dir"=>"src:drivers:flashiap_wrapper"}, {"source"=
+
+>"src\\drivers\\flashiap_wrapper\\fsl_flashiap_wrapper.h", "virtual-dir"=>"src:drivers:flashiap_wrapper"}, {"source"=>"src\\drivers\\microseconds\\microseconds.h", "virtual-dir"=>"src:drivers:microsec
+
+onds"}, {"source"=>"src\\include\\bootloader_common.h", "virtual-dir"=>"src:include"}, {"source"=>"src\\memory\\memory.h", "virtual-dir"=>"src:memory"}, {"source"=>"src\\memory\\src\\memory.c", "virtu
+
+al-dir"=>"src:memory:src"}, {"source"=>"src\\memory\\src\\device_memory.h", "virtual-dir"=>"src:memory:src"}, {"source"=>"src\\memory\\src\\device_memory.c", "virtual-dir"=>"src:memory:src"}, {"source
+
+"=>"src\\memory\\src\\flashiap_memory.h", "virtual-dir"=>"src:memory:src"}, {"source"=>"src\\memory\\src\\flashiap_memory.c", "virtual-dir"=>"src:memory:src"}, {"source"=>"src\\memory\\src\\normal_mem
+
+ory.h", "virtual-dir"=>"src:memory:src"}, {"source"=>"src\\memory\\src\\normal_memory.c", "virtual-dir"=>"src:memory:src"}, {"source"=>"src\\memory\\src\\pattern_fill.h", "virtual-dir"=>"src:memory:sr
+
+c"}, {"source"=>"src\\memory\\src\\pattern_fill.s", "virtual-dir"=>"src:memory:src"}, {"source"=>"src\\packet\\command_packet.h", "virtual-dir"=>"src:packet"}, {"source"=>"src\\packet\\serial_packet.h
+
+", "virtual-dir"=>"src:packet"}, {"source"=>"src\\packet\\src\\serial_packet.c", "virtual-dir"=>"src:packet:src"}, {"source"=>"src\\property\\property.h", "virtual-dir"=>"src:property"}, {"source"=>"s
+
+rc\\property\\src\\property.c", "virtual-dir"=>"src:property:src"}, {"source"=>"src\\sbloader\\sbloader.h", "virtual-dir"=>"src:sbloader"}, {"source"=>"src\\sbloader\\src\\sbloader.c", "virtual-dir"=>
+
+"src:sbloader:src"}, {"source"=>"src\\startup\\startup.c", "virtual-dir"=>"src:startup"}, {"source"=>"src\\utilities\\fsl_rtos_abstraction.h", "virtual-dir"=>"src:utilities"}, {"source"=>"src\\utiliti
+
+es\\src\\fsl_assert.c", "virtual-dir"=>"src:utilities:src"}, {"source"=>"src\\utilities\\src\\fsl_rtos_abstraction.c", "virtual-dir"=>"src:utilities:src"}], "document"=>{"board"=>"lpcxpresso_bootloade
+
+r", "name"=>"lpcxpresso_bootloader"}}, "mdk"=>{"targets"=>{"debug"=>{"cc-define"=>{"DEBUG"=>nil, "USB_STACK_BM"=>nil, "CPU_LPC54114J256BD64_cm4"=>nil, "CPU_IS_ARM_CORTEX_M4=1"=>nil, "LPCXPRESSO"=>nil,
+
+ "BL_TARGET_FLASH"=>nil}, "cx-define"=>{"DEBUG"=>nil}, "as-define"=>{"DEBUG"=>nil, "BL_HAS_BOOTLOADER_CONFIG=0"=>nil}, "identifier"=>"Debug", "target"=>"debug", "cc-flags"=>["-g", "--diag_suppress=66,
+
+1296,186,170", "--cpu Cortex-M4.fp", "--split_sections"], "cx-flags"=>["--cpu Cortex-M4.fp"], "ad-flags"=>["--predefine=\"-D__ram_vector_table__=1\""], "as-flags"=>["--cpu Cortex-M4.fp"], "ld-flags"=>
+
+["--cpu Cortex-M4.fp", "--map", "--xref", "--callgraph", "--symbols", "--info sizes", "--info totals", "--info unused", "--info veneers", "--strict", "--datacompressor off", "--remove", "--feedback_ty
+
+pe=unused,noiw"], "cp-define"=>{"LPC54114J256_M4"=>"NXP LPC54114J256_M4"}, "cc-include"=>[{"path"=>"targets\\LPC54114\\src"}, {"path"=>"targets\\LPC54114\\src\\startup"}, {"path"=>"src\\platform\\devi
+
+ces\\LPC54114"}, {"path"=>"src\\autobaud"}, {"path"=>"src\\usb\\include"}, {"path"=>"src\\usb\\osa"}, {"path"=>"src\\usb\\device"}, {"path"=>"src\\usb\\device\\class"}, {"path"=>"src\\bm_usb"}, {"path
+
+"=>"src\\include"}, {"path"=>"src\\platform"}, {"path"=>"src\\platform\\devices"}, {"path"=>"src\\platform\\CMSIS\\Include"}, {"path"=>"src"}, {"path"=>"src\\drivers"}, {"path"=>"src\\startup"}, {"pat
+
+h"=>"src\\drivers\\common"}], "as-include"=>[{"path"=>"src\\include"}], "ar-flags"=>[], "linker-file"=>{"path"=>"targets\\common\\linker\\arm\\LPC54114\\LPC5411x_flash_bootloader.scf"}, "binary-file"=
+
+>nil, "config"=>"debug", "libraries"=>[]}, "release"=>{"cc-define"=>{"NDEBUG"=>nil, "USB_STACK_BM"=>nil, "CPU_LPC54114J256BD64_cm4"=>nil, "CPU_IS_ARM_CORTEX_M4=1"=>nil, "LPCXPRESSO"=>nil, "BL_TARGET_F
+
+LASH"=>nil}, "cx-define"=>{"NDEBUG"=>nil}, "as-define"=>{"NDEBUG"=>nil, "BL_HAS_BOOTLOADER_CONFIG=0"=>nil}, "identifier"=>"Release", "target"=>"release", "cc-flags"=>["-O3", "-g", "--diag_suppress=66,
+
+1296,186,170", "--cpu Cortex-M4.fp", "--split_sections"], "cx-flags"=>["-O3", "--cpu Cortex-M4.fp"], "ad-flags"=>["--predefine=\"-D__ram_vector_table__=1\""], "as-flags"=>["--cpu Cortex-M4.fp"], "ld-f
+
+lags"=>["--cpu Cortex-M4.fp", "--map", "--xref", "--callgraph", "--symbols", "--info sizes", "--info totals", "--info unused", "--info veneers", "--strict", "--datacompressor off", "--remove", "--feed
+
+back_type=unused,noiw"], "cp-define"=>{"LPC54114J256_M4"=>"NXP LPC54114J256_M4"}, "cc-include"=>[{"path"=>"targets\\LPC54114\\src"}, {"path"=>"targets\\LPC54114\\src\\startup"}, {"path"=>"src\\platfor
+
+m\\devices\\LPC54114"}, {"path"=>"src\\autobaud"}, {"path"=>"src\\usb\\include"}, {"path"=>"src\\usb\\osa"}, {"path"=>"src\\usb\\device"}, {"path"=>"src\\usb\\device\\class"}, {"path"=>"src\\bm_usb"},
+
+ {"path"=>"src\\include"}, {"path"=>"src\\platform"}, {"path"=>"src\\platform\\devices"}, {"path"=>"src\\platform\\CMSIS\\Include"}, {"path"=>"src"}, {"path"=>"src\\drivers"}, {"path"=>"src\\startup"}
+
+, {"path"=>"src\\drivers\\common"}], "as-include"=>[{"path"=>"src\\include"}], "ar-flags"=>[], "linker-file"=>{"path"=>"targets\\common\\linker\\arm\\LPC54114\\LPC5411x_flash_bootloader.scf"}, "binary
+
+-file"=>nil, "config"=>"release", "libraries"=>[]}}, "type"=>"application", "templates"=>["templates\\mdk\\bootloader\\LPC54114\\LPC54114.uvprojx", "templates\\mdk\\bootloader\\LPC54114\\pemicro_conne
+
+ction_settings.ini"], "outdir"=>"targets\\LPC54114/mdk/lpcxpresso_bootloader", "source"=>[{"source"=>"targets\\common\\linker\\arm\\LPC54114\\LPC5411x_flash_bootloader.scf", "virtual-dir"=>"link"}, {"
+
+source"=>"targets\\LPC54114\\src\\startup\\arm\\startup_LPC54114_cm4.s", "virtual-dir"=>"src:startup"}, {"source"=>"targets\\LPC54114\\src\\startup\\system_LPC54114_cm4.c", "virtual-dir"=>"src:startup
+
+"}, {"source"=>"targets\\LPC54114\\src\\bootloader_config.h", "virtual-dir"=>"LPC54114"}, {"source"=>"targets\\LPC54114\\src\\clock_config_LPC54114.c", "virtual-dir"=>"LPC54114"}, {"source"=>"targets\
+
+\LPC54114\\src\\hardware_init_LPC54114.c", "virtual-dir"=>"LPC54114"}, {"source"=>"targets\\LPC54114\\src\\memory_map_LPC54114.c", "virtual-dir"=>"LPC54114"}, {"source"=>"targets\\LPC54114\\src\\perip
+
+herals_LPC54114.c", "virtual-dir"=>"LPC54114"}, {"source"=>"targets\\LPC54114\\src\\peripherals_pinmux.h", "virtual-dir"=>"LPC54114"}, {"source"=>"targets\\LPC54114\\src\\target_config.h", "virtual-di
+
+r"=>"LPC54114"}, {"source"=>"targets\\common\\src\\pinmux_utility_lpc.c", "virtual-dir"=>"LPC54114"}, {"source"=>"targets\\common\\src\\bl_flexcomm_usart_irq_config_common.c", "virtual-dir"=>"LPC54114
+
+"}, {"source"=>"targets\\common\\src\\bl_flexcomm_i2c_irq_config_common.c", "virtual-dir"=>"LPC54114"}, {"source"=>"targets\\common\\src\\bl_flexcomm_spi_irq_config_common.c", "virtual-dir"=>"LPC54114
+
+"}, {"source"=>"src\\autobaud\\src\\autobaud_irq.c", "virtual-dir"=>"src:autobaud:src"}, {"source"=>"src\\bootloader\\bl_app_crc_check.h", "virtual-dir"=>"src:bootloader"}, {"source"=>"src\\bootloader
+
+\\src\\flexcomm_usart_peripheral_interface.c", "virtual-dir"=>"src:bootloader:src"}, {"source"=>"src\\bootloader\\src\\flexcomm_i2c_peripheral_interface.c", "virtual-dir"=>"src:bootloader:src"}, {"sou
+
+rce"=>"src\\bootloader\\src\\flexcomm_spi_peripheral_interface.c", "virtual-dir"=>"src:bootloader:src"}, {"source"=>"src\\bootloader\\src\\usb_hid_msc_peripheral_interface.c", "virtual-dir"=>"src:boot
+
+loader:src"}, {"source"=>"src\\bootloader\\src\\bl_app_crc_check.c", "virtual-dir"=>"src:bootloader:src"}, {"source"=>"src\\bootloader\\src\\bl_misc.c", "virtual-dir"=>"src:bootloader:src"}, {"source"
+
+=>"src\\bootloader\\src\\bl_reliable_update.c", "virtual-dir"=>"src:bootloader:src"}, {"source"=>"src\\drivers\\lpc_crc\\fsl_crc.c", "virtual-dir"=>"src:drivers:crc"}, {"source"=>"src\\drivers\\micros
+
+econds\\src\\microseconds_sysclk.c", "virtual-dir"=>"src:drivers:microseconds:src"}, {"source"=>"src\\drivers\\flexcomm\\fsl_flexcomm.c", "virtual-dir"=>"src:drivers:flexcomm"}, {"source"=>"src\\drive
+
+rs\\flexcomm\\fsl_usart.c", "virtual-dir"=>"src:drivers:flexcomm"}, {"source"=>"src\\drivers\\flexcomm\\fsl_i2c.c", "virtual-dir"=>"src:drivers:flexcomm"}, {"source"=>"src\\drivers\\flexcomm\\fsl_spi.
+
+c", "virtual-dir"=>"src:drivers:flexcomm"}, {"source"=>"src\\memory\\src\\sram_init_lpc.c", "virtual-dir"=>"src:memory:src"}, {"source"=>"src\\platform\\devices\\LPC54114\\fsl_clock.c", "virtual-dir"=
+
+>"src:platform"}, {"source"=>"src\\platform\\devices\\LPC54114\\fsl_power.c", "virtual-dir"=>"src:platform"}, {"source"=>"src\\platform\\devices\\LPC54114\\fsl_power_lib\\fsl_power_lib.c", "virtual-di
+
+r"=>"src:platform"}, {"source"=>"src\\platform\\devices\\LPC54114\\fsl_reset.c", "virtual-dir"=>"src:platform"}, {"source"=>"src\\usb\\device\\class\\usb_device_class.h", "virtual-dir"=>"src:usb:devic
+
+e:calss"}, {"source"=>"src\\usb\\device\\class\\usb_device_class.c", "virtual-dir"=>"src:usb:device:calss"}, {"source"=>"src\\usb\\device\\class\\usb_device_hid.h", "virtual-dir"=>"src:usb:device:cals
+
+s"}, {"source"=>"src\\usb\\device\\class\\usb_device_hid.c", "virtual-dir"=>"src:usb:device:calss"}, {"source"=>"src\\usb\\device\\class\\usb_device_msc.h", "virtual-dir"=>"src:usb:device:calss"}, {"s
+
+ource"=>"src\\usb\\device\\class\\usb_device_msc.c", "virtual-dir"=>"src:usb:device:calss"}, {"source"=>"src\\usb\\device\\class\\usb_device_msc_ufi.h", "virtual-dir"=>"src:usb:device:calss"}, {"sourc
+
+e"=>"src\\usb\\device\\class\\usb_device_msc_ufi.c", "virtual-dir"=>"src:usb:device:calss"}, {"source"=>"src\\usb\\device\\usb_device.h", "virtual-dir"=>"src:usb:device"}, {"source"=>"src\\usb\\device
+
+\\usb_device_ch9.c", "virtual-dir"=>"src:usb:device"}, {"source"=>"src\\usb\\device\\usb_device_ch9.h", "virtual-dir"=>"src:usb:device"}, {"source"=>"src\\usb\\device\\usb_device_dci.c", "virtual-dir"
+
+=>"src:usb:device"}, {"source"=>"src\\usb\\device\\usb_device_dci.h", "virtual-dir"=>"src:usb:device"}, {"source"=>"src\\usb\\device\\usb_device_lpcip3511.c", "virtual-dir"=>"src:usb:device"}, {"sourc
+
+e"=>"src\\usb\\device\\usb_device_lpcip3511.h", "virtual-dir"=>"src:usb:device"}, {"source"=>"src\\usb\\include\\usb.h", "virtual-dir"=>"src:usb:include"}, {"source"=>"src\\usb\\osa\\usb_osa.h", "virt
+
+ual-dir"=>"src:usb:osa"}, {"source"=>"src\\usb\\osa\\usb_osa_bm.h", "virtual-dir"=>"src:usb:osa"}, {"source"=>"src\\usb\\osa\\usb_osa_bm.c", "virtual-dir"=>"src:usb:osa"}, {"source"=>"src\\bm_usb\\boo
+
+tloader_hid_report_ids.h", "virtual-dir"=>"src:usb:bm_composite"}, {"source"=>"src\\bm_usb\\fat_directory_entry.h", "virtual-dir"=>"src:usb:bm_composite"}, {"source"=>"src\\bm_usb\\composite.h", "virt
+
+ual-dir"=>"src:usb:bm_composite"}, {"source"=>"src\\bm_usb\\composite.c", "virtual-dir"=>"src:usb:bm_composite"}, {"source"=>"src\\bm_usb\\hid_bootloader.h", "virtual-dir"=>"src:usb:bm_composite"}, {"
+
+source"=>"src\\bm_usb\\hid_bootloader.c", "virtual-dir"=>"src:usb:bm_composite"}, {"source"=>"src\\bm_usb\\msc_disk.h", "virtual-dir"=>"src:usb:bm_composite"}, {"source"=>"src\\bm_usb\\msc_disk.c", "v
+
+irtual-dir"=>"src:usb:bm_composite"}, {"source"=>"src\\bm_usb\\usb_descriptor.h", "virtual-dir"=>"src:usb:bm_composite"}, {"source"=>"src\\bm_usb\\usb_descriptor.c", "virtual-dir"=>"src:usb:bm_composi
+
+te"}, {"source"=>"targets\\LPC54114\\src\\usb_device_config.h", "virtual-dir"=>"src:usb:bm_composite"}, {"source"=>"src\\autobaud\\autobaud.h", "virtual-dir"=>"src:autobaud"}, {"source"=>"src\\bootloa
+
+der\\bl_peripheral_interface.h", "virtual-dir"=>"src:bootloader"}, {"source"=>"src\\bootloader\\bl_user_entry.h", "virtual-dir"=>"src:bootloader"}, {"source"=>"src\\bootloader\\bl_version.h", "virtual
+
+-dir"=>"src:bootloader"}, {"source"=>"src\\bootloader\\bootloader.h", "virtual-dir"=>"src:bootloader"}, {"source"=>"src\\bootloader\\bl_command.h", "virtual-dir"=>"src:bootloader"}, {"source"=>"src\\b
+
+ootloader\\bl_context.h", "virtual-dir"=>"src:bootloader"}, {"source"=>"src\\bootloader\\bl_peripheral.h", "virtual-dir"=>"src:bootloader"}, {"source"=>"src\\bootloader\\bl_shutdown_cleanup.h", "virtu
+
+al-dir"=>"src:bootloader"}, {"source"=>"src\\bootloader\\src\\bl_user_entry.c", "virtual-dir"=>"src:bootloader:src"}, {"source"=>"src\\bootloader\\src\\bl_main.c", "virtual-dir"=>"src:bootloader:src"}
+
+, {"source"=>"src\\bootloader\\src\\bl_context.c", "virtual-dir"=>"src:bootloader:src"}, {"source"=>"src\\bootloader\\src\\bl_exception_handler.c", "virtual-dir"=>"src:bootloader:src"}, {"source"=>"sr
+
+c\\bootloader\\src\\bl_tree_root.c", "virtual-dir"=>"src:bootloader:src"}, {"source"=>"src\\bootloader\\src\\bl_command.c", "virtual-dir"=>"src:bootloader:src"}, {"source"=>"src\\bootloader\\src\\bl_s
+
+hutdown_cleanup.c", "virtual-dir"=>"src:bootloader:src"}, {"source"=>"src\\crc\\crc16.h", "virtual-dir"=>"src:crc"}, {"source"=>"src\\crc\\crc32.h", "virtual-dir"=>"src:crc"}, {"source"=>"src\\crc\\sr
+
+c\\crc16.c", "virtual-dir"=>"src:crc:src"}, {"source"=>"src\\crc\\src\\crc32.c", "virtual-dir"=>"src:crc:src"}, {"source"=>"src\\drivers\\lpc_iocon\\fsl_iocon.h", "virtual-dir"=>"src:drivers:iocon"}, 
+
+{"source"=>"src\\drivers\\lpc_gpio\\fsl_gpio.c", "virtual-dir"=>"src:drivers:gpio"}, {"source"=>"src\\drivers\\gint\\fsl_gint.c", "virtual-dir"=>"src:drivers:gint"}, {"source"=>"src\\drivers\\flashiap
+
+\\fsl_flashiap.c", "virtual-dir"=>"src:drivers:flashiap"}, {"source"=>"src\\drivers\\flashiap\\fsl_flashiap.h", "virtual-dir"=>"src:drivers:flashiap"}, {"source"=>"src\\drivers\\flashiap_wrapper\\fsl_
+
+flashiap_wrapper.c", "virtual-dir"=>"src:drivers:flashiap_wrapper"}, {"source"=>"src\\drivers\\flashiap_wrapper\\fsl_flashiap_wrapper.h", "virtual-dir"=>"src:drivers:flashiap_wrapper"}, {"source"=>"sr
+
+c\\drivers\\microseconds\\microseconds.h", "virtual-dir"=>"src:drivers:microseconds"}, {"source"=>"src\\include\\bootloader_common.h", "virtual-dir"=>"src:include"}, {"source"=>"src\\memory\\memory.h"
+
+, "virtual-dir"=>"src:memory"}, {"source"=>"src\\memory\\src\\memory.c", "virtual-dir"=>"src:memory:src"}, {"source"=>"src\\memory\\src\\device_memory.h", "virtual-dir"=>"src:memory:src"}, {"source"=>
+
+"src\\memory\\src\\device_memory.c", "virtual-dir"=>"src:memory:src"}, {"source"=>"src\\memory\\src\\flashiap_memory.h", "virtual-dir"=>"src:memory:src"}, {"source"=>"src\\memory\\src\\flashiap_memory
+
+.c", "virtual-dir"=>"src:memory:src"}, {"source"=>"src\\memory\\src\\normal_memory.h", "virtual-dir"=>"src:memory:src"}, {"source"=>"src\\memory\\src\\normal_memory.c", "virtual-dir"=>"src:memory:src"
+
+}, {"source"=>"src\\memory\\src\\pattern_fill.h", "virtual-dir"=>"src:memory:src"}, {"source"=>"src\\memory\\src\\pattern_fill.s", "virtual-dir"=>"src:memory:src"}, {"source"=>"src\\packet\\command_pa
+
+cket.h", "virtual-dir"=>"src:packet"}, {"source"=>"src\\packet\\serial_packet.h", "virtual-dir"=>"src:packet"}, {"source"=>"src\\packet\\src\\serial_packet.c", "virtual-dir"=>"src:packet:src"}, {"sour
+
+ce"=>"src\\property\\property.h", "virtual-dir"=>"src:property"}, {"source"=>"src\\property\\src\\property.c", "virtual-dir"=>"src:property:src"}, {"source"=>"src\\sbloader\\sbloader.h", "virtual-dir"
+
+=>"src:sbloader"}, {"source"=>"src\\sbloader\\src\\sbloader.c", "virtual-dir"=>"src:sbloader:src"}, {"source"=>"src\\startup\\startup.c", "virtual-dir"=>"src:startup"}, {"source"=>"src\\utilities\\fsl
+
+_rtos_abstraction.h", "virtual-dir"=>"src:utilities"}, {"source"=>"src\\utilities\\src\\fsl_assert.c", "virtual-dir"=>"src:utilities:src"}, {"source"=>"src\\utilities\\src\\fsl_rtos_abstraction.c", "v
+
+irtual-dir"=>"src:utilities:src"}], "document"=>{"board"=>"lpcxpresso_bootloader", "name"=>"lpcxpresso_bootloader"}}, "kds"=>{"targets"=>{"debug"=>{"cc-define"=>{"DEBUG"=>nil, "LPCXPRESSO"=>nil, "BL_T
+
+ARGET_FLASH"=>nil, "USB_STACK_BM"=>nil, "CPU_LPC54114J256BD64_cm4"=>nil, "CPU_IS_ARM_CORTEX_M4=1"=>nil}, "cx-define"=>{"DEBUG"=>nil}, "as-define"=>{"DEBUG"=>nil}, "identifier"=>"Debug", "target"=>"deb
+
+ug", "cc-flags"=>["-g", "-mcpu=cortex-m4", "-mfloat-abi=hard", "-mfpu=fpv4-sp-d16", "-Wall", "-fno-common", "-ffunction-sections", "-fdata-sections", "-ffreestanding", "-fno-builtin", "-fshort-wchar",
+
+ "-mthumb", "-mapcs", "-std=gnu99", "-flto", "-fno-inline-small-functions"], "cx-flags"=>["-g", "-mcpu=cortex-m4", "-Wall", "-mfloat-abi=hard", "-mfpu=fpv4-sp-d16"], "ld-flags"=>["-g", "-mfloat-abi=ha
+
+rd", "-mfpu=fpv4-sp-d16", "--specs=nano.specs", "-lm", "-lg", "-lgcc", "-lnosys", "-Wall", "-fno-common", "-ffunction-sections", "-fdata-sections", "-ffreestanding", "-fno-builtin", "-fshort-wchar -Wl
+
+,--no-wchar-size-warning", "-mthumb", "-mapcs", "-Xlinker --gc-sections", "-Xlinker -static", "-Xlinker -z", "-Xlinker muldefs", "-flto"], "ad-flags"=>["-Xlinker --defsym=__ram_vector_table__=1"], "as
+
+-flags"=>["-mcpu=cortex-m4", "-Wall", "-mfloat-abi=hard", "-mfpu=fpv4-sp-d16", "-fno-common", "-ffunction-sections", "-fdata-sections", "-ffreestanding", "-fno-builtin", "-fshort-wchar", "-mthumb", "-
+
+mapcs", "-std=gnu99"], "cp-define"=>{"LPC54114J256_M4"=>"NXP LPC54114J256_M4"}, "cc-include"=>[{"path"=>"targets\\LPC54114\\src"}, {"path"=>"targets\\LPC54114\\src\\startup"}, {"path"=>"src\\platform\
+
+\devices\\LPC54114"}, {"path"=>"src\\autobaud"}, {"path"=>"src\\usb\\include"}, {"path"=>"src\\usb\\osa"}, {"path"=>"src\\usb\\device"}, {"path"=>"src\\usb\\device\\class"}, {"path"=>"src\\bm_usb"}, {
+
+"path"=>"src\\include"}, {"path"=>"src\\platform"}, {"path"=>"src\\platform\\devices"}, {"path"=>"src\\platform\\CMSIS\\Include"}, {"path"=>"src"}, {"path"=>"src\\drivers"}, {"path"=>"src\\startup"}, 
+
+{"path"=>"src\\drivers\\common"}], "as-include"=>[{"path"=>"src\\include"}], "ar-flags"=>[], "linker-file"=>{"path"=>"targets\\common\\linker\\kds\\LPC54114\\LPC5411x_flash_bootloader.ld"}, "binary-fi
+
+le"=>nil, "config"=>"debug", "libraries"=>[]}, "release"=>{"cc-define"=>{"NDEBUG"=>nil, "LPCXPRESSO"=>nil, "BL_TARGET_FLASH"=>nil, "USB_STACK_BM"=>nil, "CPU_LPC54114J256BD64_cm4"=>nil, "CPU_IS_ARM_COR
+
+TEX_M4=1"=>nil}, "cx-define"=>{"NDEBUG"=>nil}, "as-define"=>{"NDEBUG"=>nil}, "identifier"=>"Release", "target"=>"release", "cc-flags"=>["-Os", "-g", "-mcpu=cortex-m4", "-mfloat-abi=hard", "-mfpu=fpv4-
+
+sp-d16", "-Wall", "-fno-common", "-ffunction-sections", "-fdata-sections", "-ffreestanding", "-fno-builtin", "-fshort-wchar", "-mthumb", "-mapcs", "-std=gnu99", "-flto", "-fno-inline-small-functions"]
+
+, "cx-flags"=>["-Os", "-g", "-mcpu=cortex-m4", "-Wall", "-mfloat-abi=hard", "-mfpu=fpv4-sp-d16"], "as-flags"=>["-Os", "-mcpu=cortex-m4", "-Wall", "-mfloat-abi=hard", "-mfpu=fpv4-sp-d16", "-fno-common"
+
+, "-ffunction-sections", "-fdata-sections", "-ffreestanding", "-fno-builtin", "-fshort-wchar", "-mthumb", "-mapcs", "-std=gnu99"], "ld-flags"=>["-Os", "-g", "-mfloat-abi=hard", "-mfpu=fpv4-sp-d16", "-
+
+-specs=nano.specs", "-lm", "-lg", "-lgcc", "-lnosys", "-Wall", "-fno-common", "-ffunction-sections", "-fdata-sections", "-ffreestanding", "-fno-builtin", "-fshort-wchar -Wl,--no-wchar-size-warning", "
+
+-mthumb", "-mapcs", "-Xlinker --gc-sections", "-Xlinker -static", "-Xlinker -z", "-Xlinker muldefs", "-flto"], "ad-flags"=>["-Xlinker --defsym=__ram_vector_table__=1"], "cp-define"=>{"LPC54114J256_M4"
+
+=>"NXP LPC54114J256_M4"}, "cc-include"=>[{"path"=>"targets\\LPC54114\\src"}, {"path"=>"targets\\LPC54114\\src\\startup"}, {"path"=>"src\\platform\\devices\\LPC54114"}, {"path"=>"src\\autobaud"}, {"pat
+
+h"=>"src\\usb\\include"}, {"path"=>"src\\usb\\osa"}, {"path"=>"src\\usb\\device"}, {"path"=>"src\\usb\\device\\class"}, {"path"=>"src\\bm_usb"}, {"path"=>"src\\include"}, {"path"=>"src\\platform"}, {"
+
+path"=>"src\\platform\\devices"}, {"path"=>"src\\platform\\CMSIS\\Include"}, {"path"=>"src"}, {"path"=>"src\\drivers"}, {"path"=>"src\\startup"}, {"path"=>"src\\drivers\\common"}], "as-include"=>[{"pa
+
+th"=>"src\\include"}], "ar-flags"=>[], "linker-file"=>{"path"=>"targets\\common\\linker\\kds\\LPC54114\\LPC5411x_flash_bootloader.ld"}, "binary-file"=>nil, "config"=>"release", "libraries"=>[]}}, "typ
+
+e"=>"application", "templates"=>["templates/kds/bootloader/LPC54114/.cproject", "templates/kds/bootloader/LPC54114/.project", "templates/kds/bootloader/LPC54114/Debug Jlink.launch", "templates/kds/boo
+
+tloader/LPC54114/Release Jlink.launch", "templates/kds/bootloader/LPC54114/Debug PNE.launch", "templates/kds/bootloader/LPC54114/Release PNE.launch", "templates/kds/bootloader/LPC54114/Debug CMSISDAP.
+
+launch", "templates/kds/bootloader/LPC54114/Release CMSISDAP.launch"], "outdir"=>"targets\\LPC54114/kds/lpcxpresso_bootloader", "source"=>[{"source"=>"targets\\common\\linker\\kds\\LPC54114\\LPC5411x_
+
+flash_bootloader.ld", "virtual-dir"=>"link"}, {"source"=>"src\\startup\\crt0_gcc.S", "virtual-dir"=>"src:startup"}, {"source"=>"src\\memory\\src\\pattern_fill_gcc.S", "virtual-dir"=>"src:memory:src"},
+
+ {"source"=>"targets\\LPC54114\\src\\startup\\gcc\\startup_LPC54114_cm4.S", "virtual-dir"=>"src:startup"}, {"source"=>"targets\\LPC54114\\src\\startup\\system_LPC54114_cm4.c", "virtual-dir"=>"src:star
+
+tup"}, {"source"=>"targets\\LPC54114\\src\\bootloader_config.h", "virtual-dir"=>"LPC54114"}, {"source"=>"targets\\LPC54114\\src\\clock_config_LPC54114.c", "virtual-dir"=>"LPC54114"}, {"source"=>"targe
+
+ts\\LPC54114\\src\\hardware_init_LPC54114.c", "virtual-dir"=>"LPC54114"}, {"source"=>"targets\\LPC54114\\src\\memory_map_LPC54114.c", "virtual-dir"=>"LPC54114"}, {"source"=>"targets\\LPC54114\\src\\pe
+
+ripherals_LPC54114.c", "virtual-dir"=>"LPC54114"}, {"source"=>"targets\\LPC54114\\src\\peripherals_pinmux.h", "virtual-dir"=>"LPC54114"}, {"source"=>"targets\\LPC54114\\src\\target_config.h", "virtual
+
+-dir"=>"LPC54114"}, {"source"=>"targets\\common\\src\\pinmux_utility_lpc.c", "virtual-dir"=>"LPC54114"}, {"source"=>"targets\\common\\src\\bl_flexcomm_usart_irq_config_common.c", "virtual-dir"=>"LPC54
+
+114"}, {"source"=>"targets\\common\\src\\bl_flexcomm_i2c_irq_config_common.c", "virtual-dir"=>"LPC54114"}, {"source"=>"targets\\common\\src\\bl_flexcomm_spi_irq_config_common.c", "virtual-dir"=>"LPC54
+
+114"}, {"source"=>"src\\autobaud\\src\\autobaud_irq.c", "virtual-dir"=>"src:autobaud:src"}, {"source"=>"src\\bootloader\\bl_app_crc_check.h", "virtual-dir"=>"src:bootloader"}, {"source"=>"src\\bootloa
+
+der\\src\\flexcomm_usart_peripheral_interface.c", "virtual-dir"=>"src:bootloader:src"}, {"source"=>"src\\bootloader\\src\\flexcomm_i2c_peripheral_interface.c", "virtual-dir"=>"src:bootloader:src"}, {"
+
+source"=>"src\\bootloader\\src\\flexcomm_spi_peripheral_interface.c", "virtual-dir"=>"src:bootloader:src"}, {"source"=>"src\\bootloader\\src\\usb_hid_msc_peripheral_interface.c", "virtual-dir"=>"src:b
+
+ootloader:src"}, {"source"=>"src\\bootloader\\src\\bl_app_crc_check.c", "virtual-dir"=>"src:bootloader:src"}, {"source"=>"src\\bootloader\\src\\bl_misc.c", "virtual-dir"=>"src:bootloader:src"}, {"sour
+
+ce"=>"src\\bootloader\\src\\bl_reliable_update.c", "virtual-dir"=>"src:bootloader:src"}, {"source"=>"src\\drivers\\lpc_crc\\fsl_crc.c", "virtual-dir"=>"src:drivers:crc"}, {"source"=>"src\\drivers\\mic
+
+roseconds\\src\\microseconds_sysclk.c", "virtual-dir"=>"src:drivers:microseconds:src"}, {"source"=>"src\\drivers\\flexcomm\\fsl_flexcomm.c", "virtual-dir"=>"src:drivers:flexcomm"}, {"source"=>"src\\dr
+
+ivers\\flexcomm\\fsl_usart.c", "virtual-dir"=>"src:drivers:flexcomm"}, {"source"=>"src\\drivers\\flexcomm\\fsl_i2c.c", "virtual-dir"=>"src:drivers:flexcomm"}, {"source"=>"src\\drivers\\flexcomm\\fsl_s
+
+pi.c", "virtual-dir"=>"src:drivers:flexcomm"}, {"source"=>"src\\memory\\src\\sram_init_lpc.c", "virtual-dir"=>"src:memory:src"}, {"source"=>"src\\platform\\devices\\LPC54114\\fsl_clock.c", "virtual-di
+
+r"=>"src:platform"}, {"source"=>"src\\platform\\devices\\LPC54114\\fsl_power.c", "virtual-dir"=>"src:platform"}, {"source"=>"src\\platform\\devices\\LPC54114\\fsl_power_lib\\fsl_power_lib.c", "virtual
+
+-dir"=>"src:platform"}, {"source"=>"src\\platform\\devices\\LPC54114\\fsl_reset.c", "virtual-dir"=>"src:platform"}, {"source"=>"src\\usb\\device\\class\\usb_device_class.h", "virtual-dir"=>"src:usb:de
+
+vice:calss"}, {"source"=>"src\\usb\\device\\class\\usb_device_class.c", "virtual-dir"=>"src:usb:device:calss"}, {"source"=>"src\\usb\\device\\class\\usb_device_hid.h", "virtual-dir"=>"src:usb:device:c
+
+alss"}, {"source"=>"src\\usb\\device\\class\\usb_device_hid.c", "virtual-dir"=>"src:usb:device:calss"}, {"source"=>"src\\usb\\device\\class\\usb_device_msc.h", "virtual-dir"=>"src:usb:device:calss"}, 
+
+{"source"=>"src\\usb\\device\\class\\usb_device_msc.c", "virtual-dir"=>"src:usb:device:calss"}, {"source"=>"src\\usb\\device\\class\\usb_device_msc_ufi.h", "virtual-dir"=>"src:usb:device:calss"}, {"so
+
+urce"=>"src\\usb\\device\\class\\usb_device_msc_ufi.c", "virtual-dir"=>"src:usb:device:calss"}, {"source"=>"src\\usb\\device\\usb_device.h", "virtual-dir"=>"src:usb:device"}, {"source"=>"src\\usb\\dev
+
+ice\\usb_device_ch9.c", "virtual-dir"=>"src:usb:device"}, {"source"=>"src\\usb\\device\\usb_device_ch9.h", "virtual-dir"=>"src:usb:device"}, {"source"=>"src\\usb\\device\\usb_device_dci.c", "virtual-d
+
+ir"=>"src:usb:device"}, {"source"=>"src\\usb\\device\\usb_device_dci.h", "virtual-dir"=>"src:usb:device"}, {"source"=>"src\\usb\\device\\usb_device_lpcip3511.c", "virtual-dir"=>"src:usb:device"}, {"so
+
+urce"=>"src\\usb\\device\\usb_device_lpcip3511.h", "virtual-dir"=>"src:usb:device"}, {"source"=>"src\\usb\\include\\usb.h", "virtual-dir"=>"src:usb:include"}, {"source"=>"src\\usb\\osa\\usb_osa.h", "v
+
+irtual-dir"=>"src:usb:osa"}, {"source"=>"src\\usb\\osa\\usb_osa_bm.h", "virtual-dir"=>"src:usb:osa"}, {"source"=>"src\\usb\\osa\\usb_osa_bm.c", "virtual-dir"=>"src:usb:osa"}, {"source"=>"src\\bm_usb\\
+
+bootloader_hid_report_ids.h", "virtual-dir"=>"src:usb:bm_composite"}, {"source"=>"src\\bm_usb\\fat_directory_entry.h", "virtual-dir"=>"src:usb:bm_composite"}, {"source"=>"src\\bm_usb\\composite.h", "v
+
+irtual-dir"=>"src:usb:bm_composite"}, {"source"=>"src\\bm_usb\\composite.c", "virtual-dir"=>"src:usb:bm_composite"}, {"source"=>"src\\bm_usb\\hid_bootloader.h", "virtual-dir"=>"src:usb:bm_composite"},
+
+ {"source"=>"src\\bm_usb\\hid_bootloader.c", "virtual-dir"=>"src:usb:bm_composite"}, {"source"=>"src\\bm_usb\\msc_disk.h", "virtual-dir"=>"src:usb:bm_composite"}, {"source"=>"src\\bm_usb\\msc_disk.c",
+
+ "virtual-dir"=>"src:usb:bm_composite"}, {"source"=>"src\\bm_usb\\usb_descriptor.h", "virtual-dir"=>"src:usb:bm_composite"}, {"source"=>"src\\bm_usb\\usb_descriptor.c", "virtual-dir"=>"src:usb:bm_comp
+
+osite"}, {"source"=>"targets\\LPC54114\\src\\usb_device_config.h", "virtual-dir"=>"src:usb:bm_composite"}, {"source"=>"src\\autobaud\\autobaud.h", "virtual-dir"=>"src:autobaud"}, {"source"=>"src\\boot
+
+loader\\bl_peripheral_interface.h", "virtual-dir"=>"src:bootloader"}, {"source"=>"src\\bootloader\\bl_user_entry.h", "virtual-dir"=>"src:bootloader"}, {"source"=>"src\\bootloader\\bl_version.h", "virt
+
+ual-dir"=>"src:bootloader"}, {"source"=>"src\\bootloader\\bootloader.h", "virtual-dir"=>"src:bootloader"}, {"source"=>"src\\bootloader\\bl_command.h", "virtual-dir"=>"src:bootloader"}, {"source"=>"src
+
+\\bootloader\\bl_context.h", "virtual-dir"=>"src:bootloader"}, {"source"=>"src\\bootloader\\bl_peripheral.h", "virtual-dir"=>"src:bootloader"}, {"source"=>"src\\bootloader\\bl_shutdown_cleanup.h", "vi
+
+rtual-dir"=>"src:bootloader"}, {"source"=>"src\\bootloader\\src\\bl_user_entry.c", "virtual-dir"=>"src:bootloader:src"}, {"source"=>"src\\bootloader\\src\\bl_main.c", "virtual-dir"=>"src:bootloader:sr
+
+c"}, {"source"=>"src\\bootloader\\src\\bl_context.c", "virtual-dir"=>"src:bootloader:src"}, {"source"=>"src\\bootloader\\src\\bl_exception_handler.c", "virtual-dir"=>"src:bootloader:src"}, {"source"=>
+
+"src\\bootloader\\src\\bl_tree_root.c", "virtual-dir"=>"src:bootloader:src"}, {"source"=>"src\\bootloader\\src\\bl_command.c", "virtual-dir"=>"src:bootloader:src"}, {"source"=>"src\\bootloader\\src\\b
+
+l_shutdown_cleanup.c", "virtual-dir"=>"src:bootloader:src"}, {"source"=>"src\\crc\\crc16.h", "virtual-dir"=>"src:crc"}, {"source"=>"src\\crc\\crc32.h", "virtual-dir"=>"src:crc"}, {"source"=>"src\\crc\
+
+\src\\crc16.c", "virtual-dir"=>"src:crc:src"}, {"source"=>"src\\crc\\src\\crc32.c", "virtual-dir"=>"src:crc:src"}, {"source"=>"src\\drivers\\lpc_iocon\\fsl_iocon.h", "virtual-dir"=>"src:drivers:iocon"
+
+}, {"source"=>"src\\drivers\\lpc_gpio\\fsl_gpio.c", "virtual-dir"=>"src:drivers:gpio"}, {"source"=>"src\\drivers\\gint\\fsl_gint.c", "virtual-dir"=>"src:drivers:gint"}, {"source"=>"src\\drivers\\flash
+
+iap\\fsl_flashiap.c", "virtual-dir"=>"src:drivers:flashiap"}, {"source"=>"src\\drivers\\flashiap\\fsl_flashiap.h", "virtual-dir"=>"src:drivers:flashiap"}, {"source"=>"src\\drivers\\flashiap_wrapper\\f
+
+sl_flashiap_wrapper.c", "virtual-dir"=>"src:drivers:flashiap_wrapper"}, {"source"=>"src\\drivers\\flashiap_wrapper\\fsl_flashiap_wrapper.h", "virtual-dir"=>"src:drivers:flashiap_wrapper"}, {"source"=>
+
+"src\\drivers\\microseconds\\microseconds.h", "virtual-dir"=>"src:drivers:microseconds"}, {"source"=>"src\\include\\bootloader_common.h", "virtual-dir"=>"src:include"}, {"source"=>"src\\memory\\memory
+
+.h", "virtual-dir"=>"src:memory"}, {"source"=>"src\\memory\\src\\memory.c", "virtual-dir"=>"src:memory:src"}, {"source"=>"src\\memory\\src\\device_memory.h", "virtual-dir"=>"src:memory:src"}, {"source
+
+"=>"src\\memory\\src\\device_memory.c", "virtual-dir"=>"src:memory:src"}, {"source"=>"src\\memory\\src\\flashiap_memory.h", "virtual-dir"=>"src:memory:src"}, {"source"=>"src\\memory\\src\\flashiap_mem
+
+ory.c", "virtual-dir"=>"src:memory:src"}, {"source"=>"src\\memory\\src\\normal_memory.h", "virtual-dir"=>"src:memory:src"}, {"source"=>"src\\memory\\src\\normal_memory.c", "virtual-dir"=>"src:memory:s
+
+rc"}, {"source"=>"src\\memory\\src\\pattern_fill.h", "virtual-dir"=>"src:memory:src"}, {"source"=>"src\\memory\\src\\pattern_fill.s", "virtual-dir"=>"src:memory:src"}, {"source"=>"src\\packet\\command
+
+_packet.h", "virtual-dir"=>"src:packet"}, {"source"=>"src\\packet\\serial_packet.h", "virtual-dir"=>"src:packet"}, {"source"=>"src\\packet\\src\\serial_packet.c", "virtual-dir"=>"src:packet:src"}, {"s
+
+ource"=>"src\\property\\property.h", "virtual-dir"=>"src:property"}, {"source"=>"src\\property\\src\\property.c", "virtual-dir"=>"src:property:src"}, {"source"=>"src\\sbloader\\sbloader.h", "virtual-d
+
+ir"=>"src:sbloader"}, {"source"=>"src\\sbloader\\src\\sbloader.c", "virtual-dir"=>"src:sbloader:src"}, {"source"=>"src\\startup\\startup.c", "virtual-dir"=>"src:startup"}, {"source"=>"src\\utilities\\
+
+fsl_rtos_abstraction.h", "virtual-dir"=>"src:utilities"}, {"source"=>"src\\utilities\\src\\fsl_assert.c", "virtual-dir"=>"src:utilities:src"}, {"source"=>"src\\utilities\\src\\fsl_rtos_abstraction.c",
+
+ "virtual-dir"=>"src:utilities:src"}], "document"=>{"board"=>"lpcxpresso_bootloader", "name"=>"lpcxpresso_bootloader"}}, "mcux"=>{"targets"=>{"debug"=>{"cc-define"=>{"DEBUG"=>nil, "LPCXPRESSO"=>nil, "
+
+BL_TARGET_FLASH"=>nil, "USB_STACK_BM"=>nil, "CPU_LPC54114J256BD64_cm4"=>nil, "CPU_IS_ARM_CORTEX_M4=1"=>nil}, "cx-define"=>{"DEBUG"=>nil}, "as-define"=>{"DEBUG"=>nil}, "cc-flags"=>["-g", "-mcpu=cortex-
+
+m4", "-mfloat-abi=hard", "-mfpu=fpv4-sp-d16", "-Wall", "-fno-common", "-ffunction-sections", "-fdata-sections", "-ffreestanding", "-fno-builtin", "-fshort-wchar", "-mthumb", "-mapcs", "-std=gnu99", "-
+
+flto", "-fno-inline-small-functions"], "cx-flags"=>["-g", "-mcpu=cortex-m4", "-Wall", "-mfloat-abi=hard", "-mfpu=fpv4-sp-d16"], "ld-flags"=>["-g", "-mcpu=cortex-m4", "-mfloat-abi=hard", "-mfpu=fpv4-sp
+
+-d16", "--specs=nano.specs", "-lm", "-lg", "-lgcc", "-lnosys", "-Wall", "-fno-common", "-ffunction-sections", "-fdata-sections", "-ffreestanding", "-fno-builtin", "-fshort-wchar -Wl,--no-wchar-size-wa
+
+rning", "-mthumb", "-mapcs", "-Xlinker --gc-sections", "-Xlinker -static", "-Xlinker -z", "-Xlinker muldefs", "-flto"], "ad-flags"=>["-Xlinker --defsym=__ram_vector_table__=1"], "as-flags"=>["-mcpu=co
+
+rtex-m4", "-Wall", "-mfloat-abi=hard", "-mfpu=fpv4-sp-d16", "-fno-common", "-ffunction-sections", "-fdata-sections", "-ffreestanding", "-fno-builtin", "-fshort-wchar", "-mthumb", "-mapcs", "-std=gnu99
+
+"], "cp-define"=>{"LPC54114J256_M4"=>"NXP LPC54114J256_M4"}, "cc-include"=>[{"path"=>"targets\\LPC54114\\src"}, {"path"=>"targets\\LPC54114\\src\\startup"}, {"path"=>"src\\platform\\devices\\LPC54114"
+
+}, {"path"=>"src\\autobaud"}, {"path"=>"src\\usb\\include"}, {"path"=>"src\\usb\\osa"}, {"path"=>"src\\usb\\device"}, {"path"=>"src\\usb\\device\\class"}, {"path"=>"src\\bm_usb"}, {"path"=>"src\\inclu
+
+de"}, {"path"=>"src\\platform"}, {"path"=>"src\\platform\\devices"}, {"path"=>"src\\platform\\CMSIS\\Include"}, {"path"=>"src"}, {"path"=>"src\\drivers"}, {"path"=>"src\\startup"}, {"path"=>"src\\driv
+
+ers\\common"}], "as-include"=>[{"path"=>"src\\include"}], "ar-flags"=>[], "binary-file"=>nil, "identifier"=>"Debug", "config"=>"debug", "target"=>"debug", "libraries"=>[]}, "release"=>{"cc-define"=>{"
+
+NDEBUG"=>nil, "LPCXPRESSO"=>nil, "BL_TARGET_FLASH"=>nil, "USB_STACK_BM"=>nil, "CPU_LPC54114J256BD64_cm4"=>nil, "CPU_IS_ARM_CORTEX_M4=1"=>nil}, "cx-define"=>{"NDEBUG"=>nil}, "as-define"=>{"NDEBUG"=>nil
+
+}, "cc-flags"=>["-Os", "-g", "-mcpu=cortex-m4", "-mfloat-abi=hard", "-mfpu=fpv4-sp-d16", "-Wall", "-fno-common", "-ffunction-sections", "-fdata-sections", "-ffreestanding", "-fno-builtin", "-fshort-wc
+
+har", "-mthumb", "-mapcs", "-std=gnu99", "-flto", "-fno-inline-small-functions"], "cx-flags"=>["-Os", "-g", "-mcpu=cortex-m4", "-Wall", "-mfloat-abi=hard", "-mfpu=fpv4-sp-d16"], "as-flags"=>["-Os", "-
+
+mcpu=cortex-m4", "-Wall", "-mfloat-abi=hard", "-mfpu=fpv4-sp-d16", "-fno-common", "-ffunction-sections", "-fdata-sections", "-ffreestanding", "-fno-builtin", "-fshort-wchar", "-mthumb", "-mapcs", "-st
+
+d=gnu99"], "ld-flags"=>["-Os", "-g", "-mcpu=cortex-m4", "-mfloat-abi=hard", "-mfpu=fpv4-sp-d16", "--specs=nano.specs", "-lm", "-lg", "-lgcc", "-lnosys", "-Wall", "-fno-common", "-ffunction-sections", 
+
+"-fdata-sections", "-ffreestanding", "-fno-builtin", "-fshort-wchar -Wl,--no-wchar-size-warning", "-mthumb", "-mapcs", "-Xlinker --gc-sections", "-Xlinker -static", "-Xlinker -z", "-Xlinker muldefs", 
+
+"-flto"], "ad-flags"=>["-Xlinker --defsym=__ram_vector_table__=1"], "cp-define"=>{"LPC54114J256_M4"=>"NXP LPC54114J256_M4"}, "cc-include"=>[{"path"=>"targets\\LPC54114\\src"}, {"path"=>"targets\\LPC54
+
+114\\src\\startup"}, {"path"=>"src\\platform\\devices\\LPC54114"}, {"path"=>"src\\autobaud"}, {"path"=>"src\\usb\\include"}, {"path"=>"src\\usb\\osa"}, {"path"=>"src\\usb\\device"}, {"path"=>"src\\usb
+
+\\device\\class"}, {"path"=>"src\\bm_usb"}, {"path"=>"src\\include"}, {"path"=>"src\\platform"}, {"path"=>"src\\platform\\devices"}, {"path"=>"src\\platform\\CMSIS\\Include"}, {"path"=>"src"}, {"path"
+
+=>"src\\drivers"}, {"path"=>"src\\startup"}, {"path"=>"src\\drivers\\common"}], "as-include"=>[{"path"=>"src\\include"}], "ar-flags"=>[], "binary-file"=>nil, "identifier"=>"Release", "config"=>"releas
+
+e", "target"=>"release", "libraries"=>[]}}, "type"=>"application", "templates"=>nil, "outdir"=>"targets\\LPC54114/mcux/lpcxpresso_bootloader", "source"=>[{"source"=>"targets\\LPC54114\\src\\startup\\m
+
+cuxpresso\\startup_lpc5411x.c", "virtual-dir"=>"src:startup"}, {"source"=>"targets\\LPC54114\\src\\startup\\system_LPC54114_cm4.c", "virtual-dir"=>"src:startup"}, {"source"=>"targets\\LPC54114\\src\\b
+
+ootloader_config.h", "virtual-dir"=>"LPC54114"}, {"source"=>"targets\\LPC54114\\src\\clock_config_LPC54114.c", "virtual-dir"=>"LPC54114"}, {"source"=>"targets\\LPC54114\\src\\hardware_init_LPC54114.c"
+
+, "virtual-dir"=>"LPC54114"}, {"source"=>"targets\\LPC54114\\src\\memory_map_LPC54114.c", "virtual-dir"=>"LPC54114"}, {"source"=>"targets\\LPC54114\\src\\peripherals_LPC54114.c", "virtual-dir"=>"LPC54
+
+114"}, {"source"=>"targets\\LPC54114\\src\\peripherals_pinmux.h", "virtual-dir"=>"LPC54114"}, {"source"=>"targets\\LPC54114\\src\\target_config.h", "virtual-dir"=>"LPC54114"}, {"source"=>"targets\\com
+
+mon\\src\\pinmux_utility_lpc.c", "virtual-dir"=>"LPC54114"}, {"source"=>"targets\\common\\src\\bl_flexcomm_usart_irq_config_common.c", "virtual-dir"=>"LPC54114"}, {"source"=>"targets\\common\\src\\bl_
+
+flexcomm_i2c_irq_config_common.c", "virtual-dir"=>"LPC54114"}, {"source"=>"targets\\common\\src\\bl_flexcomm_spi_irq_config_common.c", "virtual-dir"=>"LPC54114"}, {"source"=>"src\\autobaud\\src\\autob
+
+aud_irq.c", "virtual-dir"=>"src:autobaud:src"}, {"source"=>"src\\bootloader\\bl_app_crc_check.h", "virtual-dir"=>"src:bootloader"}, {"source"=>"src\\bootloader\\src\\flexcomm_usart_peripheral_interfac
+
+e.c", "virtual-dir"=>"src:bootloader:src"}, {"source"=>"src\\bootloader\\src\\flexcomm_i2c_peripheral_interface.c", "virtual-dir"=>"src:bootloader:src"}, {"source"=>"src\\bootloader\\src\\flexcomm_spi
+
+_peripheral_interface.c", "virtual-dir"=>"src:bootloader:src"}, {"source"=>"src\\bootloader\\src\\usb_hid_msc_peripheral_interface.c", "virtual-dir"=>"src:bootloader:src"}, {"source"=>"src\\bootloader
+
+\\src\\bl_app_crc_check.c", "virtual-dir"=>"src:bootloader:src"}, {"source"=>"src\\bootloader\\src\\bl_misc.c", "virtual-dir"=>"src:bootloader:src"}, {"source"=>"src\\bootloader\\src\\bl_reliable_upda
+
+te.c", "virtual-dir"=>"src:bootloader:src"}, {"source"=>"src\\drivers\\lpc_crc\\fsl_crc.c", "virtual-dir"=>"src:drivers:crc"}, {"source"=>"src\\drivers\\microseconds\\src\\microseconds_sysclk.c", "vir
+
+tual-dir"=>"src:drivers:microseconds:src"}, {"source"=>"src\\drivers\\flexcomm\\fsl_flexcomm.c", "virtual-dir"=>"src:drivers:flexcomm"}, {"source"=>"src\\drivers\\flexcomm\\fsl_usart.c", "virtual-dir"
+
+=>"src:drivers:flexcomm"}, {"source"=>"src\\drivers\\flexcomm\\fsl_i2c.c", "virtual-dir"=>"src:drivers:flexcomm"}, {"source"=>"src\\drivers\\flexcomm\\fsl_spi.c", "virtual-dir"=>"src:drivers:flexcomm"
+
+}, {"source"=>"src\\memory\\src\\sram_init_lpc.c", "virtual-dir"=>"src:memory:src"}, {"source"=>"src\\platform\\devices\\LPC54114\\fsl_clock.c", "virtual-dir"=>"src:platform"}, {"source"=>"src\\platfo
+
+rm\\devices\\LPC54114\\fsl_power.c", "virtual-dir"=>"src:platform"}, {"source"=>"src\\platform\\devices\\LPC54114\\fsl_power_lib\\fsl_power_lib.c", "virtual-dir"=>"src:platform"}, {"source"=>"src\\pla
+
+tform\\devices\\LPC54114\\fsl_reset.c", "virtual-dir"=>"src:platform"}, {"source"=>"src\\usb\\device\\class\\usb_device_class.h", "virtual-dir"=>"src:usb:device:calss"}, {"source"=>"src\\usb\\device\\
+
+class\\usb_device_class.c", "virtual-dir"=>"src:usb:device:calss"}, {"source"=>"src\\usb\\device\\class\\usb_device_hid.h", "virtual-dir"=>"src:usb:device:calss"}, {"source"=>"src\\usb\\device\\class\
+
+\usb_device_hid.c", "virtual-dir"=>"src:usb:device:calss"}, {"source"=>"src\\usb\\device\\class\\usb_device_msc.h", "virtual-dir"=>"src:usb:device:calss"}, {"source"=>"src\\usb\\device\\class\\usb_dev
+
+ice_msc.c", "virtual-dir"=>"src:usb:device:calss"}, {"source"=>"src\\usb\\device\\class\\usb_device_msc_ufi.h", "virtual-dir"=>"src:usb:device:calss"}, {"source"=>"src\\usb\\device\\class\\usb_device_
+
+msc_ufi.c", "virtual-dir"=>"src:usb:device:calss"}, {"source"=>"src\\usb\\device\\usb_device.h", "virtual-dir"=>"src:usb:device"}, {"source"=>"src\\usb\\device\\usb_device_ch9.c", "virtual-dir"=>"src:
+
+usb:device"}, {"source"=>"src\\usb\\device\\usb_device_ch9.h", "virtual-dir"=>"src:usb:device"}, {"source"=>"src\\usb\\device\\usb_device_dci.c", "virtual-dir"=>"src:usb:device"}, {"source"=>"src\\usb
+
+\\device\\usb_device_dci.h", "virtual-dir"=>"src:usb:device"}, {"source"=>"src\\usb\\device\\usb_device_lpcip3511.c", "virtual-dir"=>"src:usb:device"}, {"source"=>"src\\usb\\device\\usb_device_lpcip35
+
+11.h", "virtual-dir"=>"src:usb:device"}, {"source"=>"src\\usb\\include\\usb.h", "virtual-dir"=>"src:usb:include"}, {"source"=>"src\\usb\\osa\\usb_osa.h", "virtual-dir"=>"src:usb:osa"}, {"source"=>"src
+
+\\usb\\osa\\usb_osa_bm.h", "virtual-dir"=>"src:usb:osa"}, {"source"=>"src\\usb\\osa\\usb_osa_bm.c", "virtual-dir"=>"src:usb:osa"}, {"source"=>"src\\bm_usb\\bootloader_hid_report_ids.h", "virtual-dir"=
+
+>"src:usb:bm_composite"}, {"source"=>"src\\bm_usb\\fat_directory_entry.h", "virtual-dir"=>"src:usb:bm_composite"}, {"source"=>"src\\bm_usb\\composite.h", "virtual-dir"=>"src:usb:bm_composite"}, {"sour
+
+ce"=>"src\\bm_usb\\composite.c", "virtual-dir"=>"src:usb:bm_composite"}, {"source"=>"src\\bm_usb\\hid_bootloader.h", "virtual-dir"=>"src:usb:bm_composite"}, {"source"=>"src\\bm_usb\\hid_bootloader.c",
+
+ "virtual-dir"=>"src:usb:bm_composite"}, {"source"=>"src\\bm_usb\\msc_disk.h", "virtual-dir"=>"src:usb:bm_composite"}, {"source"=>"src\\bm_usb\\msc_disk.c", "virtual-dir"=>"src:usb:bm_composite"}, {"s
+
+ource"=>"src\\bm_usb\\usb_descriptor.h", "virtual-dir"=>"src:usb:bm_composite"}, {"source"=>"src\\bm_usb\\usb_descriptor.c", "virtual-dir"=>"src:usb:bm_composite"}, {"source"=>"targets\\LPC54114\\src\
+
+\usb_device_config.h", "virtual-dir"=>"src:usb:bm_composite"}, {"source"=>"src\\autobaud\\autobaud.h", "virtual-dir"=>"src:autobaud"}, {"source"=>"src\\bootloader\\bl_peripheral_interface.h", "virtual
+
+-dir"=>"src:bootloader"}, {"source"=>"src\\bootloader\\bl_user_entry.h", "virtual-dir"=>"src:bootloader"}, {"source"=>"src\\bootloader\\bl_version.h", "virtual-dir"=>"src:bootloader"}, {"source"=>"src
+
+\\bootloader\\bootloader.h", "virtual-dir"=>"src:bootloader"}, {"source"=>"src\\bootloader\\bl_command.h", "virtual-dir"=>"src:bootloader"}, {"source"=>"src\\bootloader\\bl_context.h", "virtual-dir"=>
+
+"src:bootloader"}, {"source"=>"src\\bootloader\\bl_peripheral.h", "virtual-dir"=>"src:bootloader"}, {"source"=>"src\\bootloader\\bl_shutdown_cleanup.h", "virtual-dir"=>"src:bootloader"}, {"source"=>"s
+
+rc\\bootloader\\src\\bl_user_entry.c", "virtual-dir"=>"src:bootloader:src"}, {"source"=>"src\\bootloader\\src\\bl_main.c", "virtual-dir"=>"src:bootloader:src"}, {"source"=>"src\\bootloader\\src\\bl_co
+
+ntext.c", "virtual-dir"=>"src:bootloader:src"}, {"source"=>"src\\bootloader\\src\\bl_exception_handler.c", "virtual-dir"=>"src:bootloader:src"}, {"source"=>"src\\bootloader\\src\\bl_tree_root.c", "vir
+
+tual-dir"=>"src:bootloader:src"}, {"source"=>"src\\bootloader\\src\\bl_command.c", "virtual-dir"=>"src:bootloader:src"}, {"source"=>"src\\bootloader\\src\\bl_shutdown_cleanup.c", "virtual-dir"=>"src:b
+
+ootloader:src"}, {"source"=>"src\\crc\\crc16.h", "virtual-dir"=>"src:crc"}, {"source"=>"src\\crc\\crc32.h", "virtual-dir"=>"src:crc"}, {"source"=>"src\\crc\\src\\crc16.c", "virtual-dir"=>"src:crc:src"
+
+}, {"source"=>"src\\crc\\src\\crc32.c", "virtual-dir"=>"src:crc:src"}, {"source"=>"src\\drivers\\lpc_iocon\\fsl_iocon.h", "virtual-dir"=>"src:drivers:iocon"}, {"source"=>"src\\drivers\\lpc_gpio\\fsl_g
+
+pio.c", "virtual-dir"=>"src:drivers:gpio"}, {"source"=>"src\\drivers\\gint\\fsl_gint.c", "virtual-dir"=>"src:drivers:gint"}, {"source"=>"src\\drivers\\flashiap\\fsl_flashiap.c", "virtual-dir"=>"src:dr
+
+ivers:flashiap"}, {"source"=>"src\\drivers\\flashiap\\fsl_flashiap.h", "virtual-dir"=>"src:drivers:flashiap"}, {"source"=>"src\\drivers\\flashiap_wrapper\\fsl_flashiap_wrapper.c", "virtual-dir"=>"src:
+
+drivers:flashiap_wrapper"}, {"source"=>"src\\drivers\\flashiap_wrapper\\fsl_flashiap_wrapper.h", "virtual-dir"=>"src:drivers:flashiap_wrapper"}, {"source"=>"src\\drivers\\microseconds\\microseconds.h"
+
+, "virtual-dir"=>"src:drivers:microseconds"}, {"source"=>"src\\include\\bootloader_common.h", "virtual-dir"=>"src:include"}, {"source"=>"src\\memory\\memory.h", "virtual-dir"=>"src:memory"}, {"source"
+
+=>"src\\memory\\src\\memory.c", "virtual-dir"=>"src:memory:src"}, {"source"=>"src\\memory\\src\\device_memory.h", "virtual-dir"=>"src:memory:src"}, {"source"=>"src\\memory\\src\\device_memory.c", "vir
+
+tual-dir"=>"src:memory:src"}, {"source"=>"src\\memory\\src\\flashiap_memory.h", "virtual-dir"=>"src:memory:src"}, {"source"=>"src\\memory\\src\\flashiap_memory.c", "virtual-dir"=>"src:memory:src"}, {"
+
+source"=>"src\\memory\\src\\normal_memory.h", "virtual-dir"=>"src:memory:src"}, {"source"=>"src\\memory\\src\\normal_memory.c", "virtual-dir"=>"src:memory:src"}, {"source"=>"src\\memory\\src\\pattern_
+
+fill.h", "virtual-dir"=>"src:memory:src"}, {"source"=>"src\\memory\\src\\pattern_fill.s", "virtual-dir"=>"src:memory:src"}, {"source"=>"src\\packet\\command_packet.h", "virtual-dir"=>"src:packet"}, {"
+
+source"=>"src\\packet\\serial_packet.h", "virtual-dir"=>"src:packet"}, {"source"=>"src\\packet\\src\\serial_packet.c", "virtual-dir"=>"src:packet:src"}, {"source"=>"src\\property\\property.h", "virtua
+
+l-dir"=>"src:property"}, {"source"=>"src\\property\\src\\property.c", "virtual-dir"=>"src:property:src"}, {"source"=>"src\\sbloader\\sbloader.h", "virtual-dir"=>"src:sbloader"}, {"source"=>"src\\sbloa
+
+der\\src\\sbloader.c", "virtual-dir"=>"src:sbloader:src"}, {"source"=>"src\\startup\\startup.c", "virtual-dir"=>"src:startup"}, {"source"=>"src\\utilities\\fsl_rtos_abstraction.h", "virtual-dir"=>"src
+
+:utilities"}, {"source"=>"src\\utilities\\src\\fsl_assert.c", "virtual-dir"=>"src:utilities:src"}, {"source"=>"src\\utilities\\src\\fsl_rtos_abstraction.c", "virtual-dir"=>"src:utilities:src"}], "docu
+
+ment"=>{"board"=>"lpcxpresso_bootloader", "name"=>"lpcxpresso_bootloader"}}}, "flashloader"=>{"iar"=>{"targets"=>{"debug"=>{"cc-define"=>{"DEBUG"=>nil, "USB_STACK_BM"=>nil, "CPU_LPC54114J256BD64_cm4"=
+
+>nil, "CPU_IS_ARM_CORTEX_M4=1"=>nil, "IAR"=>nil, "BL_TARGET_RAM"=>nil}, "cx-define"=>{"DEBUG"=>nil}, "as-define"=>{"DEBUG"=>nil}, "cc-flags"=>["--debug", "--diag_suppress Pa039,Pe068,Pe069,Pa082,Pe177
+
+,Pe186,Pe550,Pa050", "--cpu=Cortex-M4", "--fpu=None", "--diag_suppress Pa050", "--no_unroll", "--endian=little", "-e", "--use_c++_inline", "--silent"], "cx-flags"=>["--diag_suppress Pa039,Pe068,Pe069,
+
+Pa082,Pe177,Pe186,Pe550,Pa050", "--cpu=Cortex-M4", "--fpu=None", "--endian=little", "-e", "--ec++", "--silent"], "as-flags"=>["--cpu Cortex-M4", "--fpu None", "-s", "-M'<>'", "-w+", "-r", "-S"], "cp-d
+
+efine"=>{"LPC54114J256_M4"=>"NXP LPC54114J256_M4"}, "ld-flags"=>["--entry Reset_Handler", "--redirect _Printf=_PrintfTiny", "--redirect _Scanf=_ScanfSmallNoMb", "--redirect __aeabi_idiv=__iar_small___
+
+aeabi_idiv", "--redirect __aeabi_uidiv=__iar_small___aeabi_uidiv", "--redirect __aeabi_idivmod=__iar_small___aeabi_idivmod", "--redirect __aeabi_uidivmod=__iar_small___aeabi_uidivmod"], "cc-include"=>
+
+[{"path"=>"targets\\LPC54114\\src"}, {"path"=>"targets\\LPC54114\\src\\startup"}, {"path"=>"src\\platform\\devices\\LPC54114"}, {"path"=>"src\\autobaud"}, {"path"=>"src\\usb\\include"}, {"path"=>"src\
+
+\usb\\osa"}, {"path"=>"src\\usb\\device"}, {"path"=>"src\\usb\\device\\class"}, {"path"=>"src\\bm_usb"}, {"path"=>"src\\include"}, {"path"=>"src\\platform"}, {"path"=>"src\\platform\\devices"}, {"path
+
+"=>"src\\platform\\CMSIS\\Include"}, {"path"=>"src"}, {"path"=>"src\\drivers"}, {"path"=>"src\\startup"}, {"path"=>"src\\drivers\\common"}], "as-include"=>[{"path"=>"src\\include"}], "ar-flags"=>[], "
+
+ad-flags"=>[], "linker-file"=>{"path"=>"targets\\common\\linker\\iar\\LPC54114\\LPC5411x_ram_flashloader.icf"}, "binary-file"=>nil, "identifier"=>"Debug", "config"=>"debug", "target"=>"512kb-ram", "li
+
+braries"=>[]}, "release"=>{"cc-define"=>{"NDEBUG"=>nil, "USB_STACK_BM"=>nil, "CPU_LPC54114J256BD64_cm4"=>nil, "CPU_IS_ARM_CORTEX_M4=1"=>nil, "IAR"=>nil, "BL_TARGET_RAM"=>nil}, "cx-define"=>{"NDEBUG"=>
+
+nil}, "as-define"=>{"NDEBUG"=>nil}, "cc-flags"=>["-Oh", "--debug", "--diag_suppress Pa039,Pe068,Pe069,Pa082,Pe177,Pe186,Pe550,Pa050", "--cpu=Cortex-M4", "--fpu=None", "--diag_suppress Pa050", "--no_un
+
+roll", "--endian=little", "-e", "--use_c++_inline", "--silent"], "cx-flags"=>["-Oh", "--diag_suppress Pa039,Pe068,Pe069,Pa082,Pe177,Pe186,Pe550,Pa050", "--cpu=Cortex-M4", "--fpu=None", "--endian=littl
+
+e", "-e", "--ec++", "--silent"], "as-flags"=>["--cpu Cortex-M4", "--fpu None", "-s", "-M'<>'", "-w+", "-r", "-S"], "cp-define"=>{"LPC54114J256_M4"=>"NXP LPC54114J256_M4"}, "ld-flags"=>["--entry Reset_
+
+Handler", "--redirect _Printf=_PrintfTiny", "--redirect _Scanf=_ScanfSmallNoMb", "--redirect __aeabi_idiv=__iar_small___aeabi_idiv", "--redirect __aeabi_uidiv=__iar_small___aeabi_uidiv", "--redirect _
+
+_aeabi_idivmod=__iar_small___aeabi_idivmod", "--redirect __aeabi_uidivmod=__iar_small___aeabi_uidivmod"], "cc-include"=>[{"path"=>"targets\\LPC54114\\src"}, {"path"=>"targets\\LPC54114\\src\\startup"}
+
+, {"path"=>"src\\platform\\devices\\LPC54114"}, {"path"=>"src\\autobaud"}, {"path"=>"src\\usb\\include"}, {"path"=>"src\\usb\\osa"}, {"path"=>"src\\usb\\device"}, {"path"=>"src\\usb\\device\\class"}, 
+
+{"path"=>"src\\bm_usb"}, {"path"=>"src\\include"}, {"path"=>"src\\platform"}, {"path"=>"src\\platform\\devices"}, {"path"=>"src\\platform\\CMSIS\\Include"}, {"path"=>"src"}, {"path"=>"src\\drivers"}, 
+
+{"path"=>"src\\startup"}, {"path"=>"src\\drivers\\common"}], "as-include"=>[{"path"=>"src\\include"}], "ar-flags"=>[], "ad-flags"=>[], "linker-file"=>{"path"=>"targets\\common\\linker\\iar\\LPC54114\\
+
+LPC5411x_ram_flashloader.icf"}, "binary-file"=>nil, "identifier"=>"Release", "config"=>"release", "target"=>"512kb-ram", "libraries"=>[]}}, "type"=>"application", "templates"=>["templates\\iar\\flashl
+
+oader\\pemicro\\generic.ewd", "templates\\iar\\flashloader\\pemicro\\generic.ewp", "templates\\iar\\flashloader\\pemicro\\generic.eww"], "outdir"=>"targets\\LPC54114/iar/flashloader", "source"=>[{"sou
+
+rce"=>"targets\\common\\linker\\iar\\LPC54114\\LPC5411x_ram_flashloader.icf", "virtual-dir"=>"link"}, {"source"=>"src\\startup\\crt0.s", "virtual-dir"=>"src:startup"}, {"source"=>"targets\\LPC54114\\s
+
+rc\\startup\\iar\\startup_LPC54114_cm4.s", "virtual-dir"=>"src:startup"}, {"source"=>"targets\\LPC54114\\src\\startup\\system_LPC54114_cm4.c", "virtual-dir"=>"src:startup"}, {"source"=>"targets\\LPC54
+
+114\\src\\bootloader_config.h", "virtual-dir"=>"LPC54114"}, {"source"=>"targets\\LPC54114\\src\\clock_config_LPC54114.c", "virtual-dir"=>"LPC54114"}, {"source"=>"targets\\LPC54114\\src\\hardware_init_
+
+LPC54114.c", "virtual-dir"=>"LPC54114"}, {"source"=>"targets\\LPC54114\\src\\memory_map_LPC54114.c", "virtual-dir"=>"LPC54114"}, {"source"=>"targets\\LPC54114\\src\\peripherals_LPC54114.c", "virtual-d
+
+ir"=>"LPC54114"}, {"source"=>"targets\\LPC54114\\src\\peripherals_pinmux.h", "virtual-dir"=>"LPC54114"}, {"source"=>"targets\\LPC54114\\src\\target_config.h", "virtual-dir"=>"LPC54114"}, {"source"=>"t
+
+argets\\common\\src\\pinmux_utility_lpc.c", "virtual-dir"=>"LPC54114"}, {"source"=>"targets\\common\\src\\bl_flexcomm_usart_irq_config_common.c", "virtual-dir"=>"LPC54114"}, {"source"=>"targets\\commo
+
+n\\src\\bl_flexcomm_i2c_irq_config_common.c", "virtual-dir"=>"LPC54114"}, {"source"=>"targets\\common\\src\\bl_flexcomm_spi_irq_config_common.c", "virtual-dir"=>"LPC54114"}, {"source"=>"src\\autobaud\
+
+\src\\autobaud_irq.c", "virtual-dir"=>"src:autobaud:src"}, {"source"=>"src\\bootloader\\bl_app_crc_check.h", "virtual-dir"=>"src:bootloader"}, {"source"=>"src\\bootloader\\src\\flexcomm_usart_peripher
+
+al_interface.c", "virtual-dir"=>"src:bootloader:src"}, {"source"=>"src\\bootloader\\src\\flexcomm_i2c_peripheral_interface.c", "virtual-dir"=>"src:bootloader:src"}, {"source"=>"src\\bootloader\\src\\f
+
+lexcomm_spi_peripheral_interface.c", "virtual-dir"=>"src:bootloader:src"}, {"source"=>"src\\bootloader\\src\\usb_hid_msc_peripheral_interface.c", "virtual-dir"=>"src:bootloader:src"}, {"source"=>"src\
+
+\bootloader\\src\\bl_app_crc_check.c", "virtual-dir"=>"src:bootloader:src"}, {"source"=>"src\\bootloader\\src\\bl_misc.c", "virtual-dir"=>"src:bootloader:src"}, {"source"=>"src\\bootloader\\src\\bl_re
+
+liable_update.c", "virtual-dir"=>"src:bootloader:src"}, {"source"=>"src\\drivers\\lpc_crc\\fsl_crc.c", "virtual-dir"=>"src:drivers:crc"}, {"source"=>"src\\drivers\\microseconds\\src\\microseconds_sysc
+
+lk.c", "virtual-dir"=>"src:drivers:microseconds:src"}, {"source"=>"src\\drivers\\flexcomm\\fsl_flexcomm.c", "virtual-dir"=>"src:drivers:flexcomm"}, {"source"=>"src\\drivers\\flexcomm\\fsl_usart.c", "v
+
+irtual-dir"=>"src:drivers:flexcomm"}, {"source"=>"src\\drivers\\flexcomm\\fsl_i2c.c", "virtual-dir"=>"src:drivers:flexcomm"}, {"source"=>"src\\drivers\\flexcomm\\fsl_spi.c", "virtual-dir"=>"src:driver
+
+s:flexcomm"}, {"source"=>"src\\memory\\src\\sram_init_lpc.c", "virtual-dir"=>"src:memory:src"}, {"source"=>"src\\platform\\devices\\LPC54114\\fsl_clock.c", "virtual-dir"=>"src:platform"}, {"source"=>"
+
+src\\platform\\devices\\LPC54114\\fsl_power.c", "virtual-dir"=>"src:platform"}, {"source"=>"src\\platform\\devices\\LPC54114\\fsl_power_lib\\fsl_power_lib.c", "virtual-dir"=>"src:platform"}, {"source"
+
+=>"src\\platform\\devices\\LPC54114\\fsl_reset.c", "virtual-dir"=>"src:platform"}, {"source"=>"src\\usb\\device\\class\\usb_device_class.h", "virtual-dir"=>"src:usb:device:calss"}, {"source"=>"src\\us
+
+b\\device\\class\\usb_device_class.c", "virtual-dir"=>"src:usb:device:calss"}, {"source"=>"src\\usb\\device\\class\\usb_device_hid.h", "virtual-dir"=>"src:usb:device:calss"}, {"source"=>"src\\usb\\dev
+
+ice\\class\\usb_device_hid.c", "virtual-dir"=>"src:usb:device:calss"}, {"source"=>"src\\usb\\device\\class\\usb_device_msc.h", "virtual-dir"=>"src:usb:device:calss"}, {"source"=>"src\\usb\\device\\cla
+
+ss\\usb_device_msc.c", "virtual-dir"=>"src:usb:device:calss"}, {"source"=>"src\\usb\\device\\class\\usb_device_msc_ufi.h", "virtual-dir"=>"src:usb:device:calss"}, {"source"=>"src\\usb\\device\\class\\
+
+usb_device_msc_ufi.c", "virtual-dir"=>"src:usb:device:calss"}, {"source"=>"src\\usb\\device\\usb_device.h", "virtual-dir"=>"src:usb:device"}, {"source"=>"src\\usb\\device\\usb_device_ch9.c", "virtual-
+
+dir"=>"src:usb:device"}, {"source"=>"src\\usb\\device\\usb_device_ch9.h", "virtual-dir"=>"src:usb:device"}, {"source"=>"src\\usb\\device\\usb_device_dci.c", "virtual-dir"=>"src:usb:device"}, {"source"
+
+=>"src\\usb\\device\\usb_device_dci.h", "virtual-dir"=>"src:usb:device"}, {"source"=>"src\\usb\\device\\usb_device_lpcip3511.c", "virtual-dir"=>"src:usb:device"}, {"source"=>"src\\usb\\device\\usb_dev
+
+ice_lpcip3511.h", "virtual-dir"=>"src:usb:device"}, {"source"=>"src\\usb\\include\\usb.h", "virtual-dir"=>"src:usb:include"}, {"source"=>"src\\usb\\osa\\usb_osa.h", "virtual-dir"=>"src:usb:osa"}, {"so
+
+urce"=>"src\\usb\\osa\\usb_osa_bm.h", "virtual-dir"=>"src:usb:osa"}, {"source"=>"src\\usb\\osa\\usb_osa_bm.c", "virtual-dir"=>"src:usb:osa"}, {"source"=>"src\\bm_usb\\bootloader_hid_report_ids.h", "vi
+
+rtual-dir"=>"src:usb:bm_composite"}, {"source"=>"src\\bm_usb\\fat_directory_entry.h", "virtual-dir"=>"src:usb:bm_composite"}, {"source"=>"src\\bm_usb\\composite.h", "virtual-dir"=>"src:usb:bm_composit
+
+e"}, {"source"=>"src\\bm_usb\\composite.c", "virtual-dir"=>"src:usb:bm_composite"}, {"source"=>"src\\bm_usb\\hid_bootloader.h", "virtual-dir"=>"src:usb:bm_composite"}, {"source"=>"src\\bm_usb\\hid_boo
+
+tloader.c", "virtual-dir"=>"src:usb:bm_composite"}, {"source"=>"src\\bm_usb\\msc_disk.h", "virtual-dir"=>"src:usb:bm_composite"}, {"source"=>"src\\bm_usb\\msc_disk.c", "virtual-dir"=>"src:usb:bm_compo
+
+site"}, {"source"=>"src\\bm_usb\\usb_descriptor.h", "virtual-dir"=>"src:usb:bm_composite"}, {"source"=>"src\\bm_usb\\usb_descriptor.c", "virtual-dir"=>"src:usb:bm_composite"}, {"source"=>"targets\\LPC
+
+54114\\src\\usb_device_config.h", "virtual-dir"=>"src:usb:bm_composite"}, {"source"=>"src\\autobaud\\autobaud.h", "virtual-dir"=>"src:autobaud"}, {"source"=>"src\\bootloader\\bl_peripheral_interface.h
+
+", "virtual-dir"=>"src:bootloader"}, {"source"=>"src\\bootloader\\bl_user_entry.h", "virtual-dir"=>"src:bootloader"}, {"source"=>"src\\bootloader\\bl_version.h", "virtual-dir"=>"src:bootloader"}, {"so
+
+urce"=>"src\\bootloader\\bootloader.h", "virtual-dir"=>"src:bootloader"}, {"source"=>"src\\bootloader\\bl_command.h", "virtual-dir"=>"src:bootloader"}, {"source"=>"src\\bootloader\\bl_context.h", "vir
+
+tual-dir"=>"src:bootloader"}, {"source"=>"src\\bootloader\\bl_peripheral.h", "virtual-dir"=>"src:bootloader"}, {"source"=>"src\\bootloader\\bl_shutdown_cleanup.h", "virtual-dir"=>"src:bootloader"}, {"
+
+source"=>"src\\bootloader\\src\\bl_user_entry.c", "virtual-dir"=>"src:bootloader:src"}, {"source"=>"src\\bootloader\\src\\bl_main.c", "virtual-dir"=>"src:bootloader:src"}, {"source"=>"src\\bootloader\
+
+\src\\bl_context.c", "virtual-dir"=>"src:bootloader:src"}, {"source"=>"src\\bootloader\\src\\bl_exception_handler.c", "virtual-dir"=>"src:bootloader:src"}, {"source"=>"src\\bootloader\\src\\bl_tree_ro
+
+ot.c", "virtual-dir"=>"src:bootloader:src"}, {"source"=>"src\\bootloader\\src\\bl_command.c", "virtual-dir"=>"src:bootloader:src"}, {"source"=>"src\\bootloader\\src\\bl_shutdown_cleanup.c", "virtual-d
+
+ir"=>"src:bootloader:src"}, {"source"=>"src\\crc\\crc16.h", "virtual-dir"=>"src:crc"}, {"source"=>"src\\crc\\crc32.h", "virtual-dir"=>"src:crc"}, {"source"=>"src\\crc\\src\\crc16.c", "virtual-dir"=>"s
+
+rc:crc:src"}, {"source"=>"src\\crc\\src\\crc32.c", "virtual-dir"=>"src:crc:src"}, {"source"=>"src\\drivers\\lpc_iocon\\fsl_iocon.h", "virtual-dir"=>"src:drivers:iocon"}, {"source"=>"src\\drivers\\lpc_
+
+gpio\\fsl_gpio.c", "virtual-dir"=>"src:drivers:gpio"}, {"source"=>"src\\drivers\\gint\\fsl_gint.c", "virtual-dir"=>"src:drivers:gint"}, {"source"=>"src\\drivers\\flashiap\\fsl_flashiap.c", "virtual-di
+
+r"=>"src:drivers:flashiap"}, {"source"=>"src\\drivers\\flashiap\\fsl_flashiap.h", "virtual-dir"=>"src:drivers:flashiap"}, {"source"=>"src\\drivers\\flashiap_wrapper\\fsl_flashiap_wrapper.c", "virtual-
+
+dir"=>"src:drivers:flashiap_wrapper"}, {"source"=>"src\\drivers\\flashiap_wrapper\\fsl_flashiap_wrapper.h", "virtual-dir"=>"src:drivers:flashiap_wrapper"}, {"source"=>"src\\drivers\\microseconds\\micr
+
+oseconds.h", "virtual-dir"=>"src:drivers:microseconds"}, {"source"=>"src\\include\\bootloader_common.h", "virtual-dir"=>"src:include"}, {"source"=>"src\\memory\\memory.h", "virtual-dir"=>"src:memory"}
+
+, {"source"=>"src\\memory\\src\\memory.c", "virtual-dir"=>"src:memory:src"}, {"source"=>"src\\memory\\src\\device_memory.h", "virtual-dir"=>"src:memory:src"}, {"source"=>"src\\memory\\src\\device_memo
+
+ry.c", "virtual-dir"=>"src:memory:src"}, {"source"=>"src\\memory\\src\\flashiap_memory.h", "virtual-dir"=>"src:memory:src"}, {"source"=>"src\\memory\\src\\flashiap_memory.c", "virtual-dir"=>"src:memor
+
+y:src"}, {"source"=>"src\\memory\\src\\normal_memory.h", "virtual-dir"=>"src:memory:src"}, {"source"=>"src\\memory\\src\\normal_memory.c", "virtual-dir"=>"src:memory:src"}, {"source"=>"src\\memory\\sr
+
+c\\pattern_fill.h", "virtual-dir"=>"src:memory:src"}, {"source"=>"src\\memory\\src\\pattern_fill.s", "virtual-dir"=>"src:memory:src"}, {"source"=>"src\\packet\\command_packet.h", "virtual-dir"=>"src:p
+
+acket"}, {"source"=>"src\\packet\\serial_packet.h", "virtual-dir"=>"src:packet"}, {"source"=>"src\\packet\\src\\serial_packet.c", "virtual-dir"=>"src:packet:src"}, {"source"=>"src\\property\\property.
+
+h", "virtual-dir"=>"src:property"}, {"source"=>"src\\property\\src\\property.c", "virtual-dir"=>"src:property:src"}, {"source"=>"src\\sbloader\\sbloader.h", "virtual-dir"=>"src:sbloader"}, {"source"=>
+
+"src\\sbloader\\src\\sbloader.c", "virtual-dir"=>"src:sbloader:src"}, {"source"=>"src\\startup\\startup.c", "virtual-dir"=>"src:startup"}, {"source"=>"src\\utilities\\fsl_rtos_abstraction.h", "virtual
+
+-dir"=>"src:utilities"}, {"source"=>"src\\utilities\\src\\fsl_assert.c", "virtual-dir"=>"src:utilities:src"}, {"source"=>"src\\utilities\\src\\fsl_rtos_abstraction.c", "virtual-dir"=>"src:utilities:sr
+
+c"}], "document"=>{"board"=>"flashloader", "name"=>"flashloader"}}, "mdk"=>{"targets"=>{"debug"=>{"cc-define"=>{"DEBUG"=>nil, "USB_STACK_BM"=>nil, "CPU_LPC54114J256BD64_cm4"=>nil, "CPU_IS_ARM_CORTEX_M
+
+4=1"=>nil, "BL_TARGET_RAM"=>nil}, "cx-define"=>{"DEBUG"=>nil}, "as-define"=>{"DEBUG"=>nil, "BL_HAS_BOOTLOADER_CONFIG=0"=>nil}, "identifier"=>"Debug", "target"=>"debug", "cc-flags"=>["-g", "--diag_supp
+
+ress=66,1296,186,170", "--cpu Cortex-M4.fp", "--split_sections"], "cx-flags"=>["--cpu Cortex-M4.fp"], "ad-flags"=>["--predefine=\"-D__ram_vector_table__=1\""], "as-flags"=>["--cpu Cortex-M4.fp"], "ld-
+
+flags"=>["--cpu Cortex-M4.fp", "--map", "--xref", "--callgraph", "--symbols", "--info sizes", "--info totals", "--info unused", "--info veneers", "--strict", "--datacompressor off", "--remove", "--fee
+
+dback_type=unused,noiw"], "cp-define"=>{"LPC54114J256_M4"=>"NXP LPC54114J256_M4"}, "cc-include"=>[{"path"=>"targets\\LPC54114\\src"}, {"path"=>"targets\\LPC54114\\src\\startup"}, {"path"=>"src\\platfo
+
+rm\\devices\\LPC54114"}, {"path"=>"src\\autobaud"}, {"path"=>"src\\usb\\include"}, {"path"=>"src\\usb\\osa"}, {"path"=>"src\\usb\\device"}, {"path"=>"src\\usb\\device\\class"}, {"path"=>"src\\bm_usb"}
+
+, {"path"=>"src\\include"}, {"path"=>"src\\platform"}, {"path"=>"src\\platform\\devices"}, {"path"=>"src\\platform\\CMSIS\\Include"}, {"path"=>"src"}, {"path"=>"src\\drivers"}, {"path"=>"src\\startup"
+
+}, {"path"=>"src\\drivers\\common"}], "as-include"=>[{"path"=>"src\\include"}], "ar-flags"=>[], "linker-file"=>{"path"=>"targets\\common\\linker\\arm\\LPC54114\\LPC5411x_ram_flashloader.scf"}, "binary
+
+-file"=>nil, "config"=>"debug", "libraries"=>[]}, "release"=>{"cc-define"=>{"NDEBUG"=>nil, "USB_STACK_BM"=>nil, "CPU_LPC54114J256BD64_cm4"=>nil, "CPU_IS_ARM_CORTEX_M4=1"=>nil, "BL_TARGET_RAM"=>nil}, "
+
+cx-define"=>{"NDEBUG"=>nil}, "as-define"=>{"NDEBUG"=>nil, "BL_HAS_BOOTLOADER_CONFIG=0"=>nil}, "identifier"=>"Release", "target"=>"release", "cc-flags"=>["-O3", "-g", "--diag_suppress=66,1296,186,170",
+
+ "--cpu Cortex-M4.fp", "--split_sections"], "cx-flags"=>["-O3", "--cpu Cortex-M4.fp"], "ad-flags"=>["--predefine=\"-D__ram_vector_table__=1\""], "as-flags"=>["--cpu Cortex-M4.fp"], "ld-flags"=>["--cpu
+
+ Cortex-M4.fp", "--map", "--xref", "--callgraph", "--symbols", "--info sizes", "--info totals", "--info unused", "--info veneers", "--strict", "--datacompressor off", "--remove", "--feedback_type=unus
+
+ed,noiw"], "cp-define"=>{"LPC54114J256_M4"=>"NXP LPC54114J256_M4"}, "cc-include"=>[{"path"=>"targets\\LPC54114\\src"}, {"path"=>"targets\\LPC54114\\src\\startup"}, {"path"=>"src\\platform\\devices\\LP
+
+C54114"}, {"path"=>"src\\autobaud"}, {"path"=>"src\\usb\\include"}, {"path"=>"src\\usb\\osa"}, {"path"=>"src\\usb\\device"}, {"path"=>"src\\usb\\device\\class"}, {"path"=>"src\\bm_usb"}, {"path"=>"src
+
+\\include"}, {"path"=>"src\\platform"}, {"path"=>"src\\platform\\devices"}, {"path"=>"src\\platform\\CMSIS\\Include"}, {"path"=>"src"}, {"path"=>"src\\drivers"}, {"path"=>"src\\startup"}, {"path"=>"sr
+
+c\\drivers\\common"}], "as-include"=>[{"path"=>"src\\include"}], "ar-flags"=>[], "linker-file"=>{"path"=>"targets\\common\\linker\\arm\\LPC54114\\LPC5411x_ram_flashloader.scf"}, "binary-file"=>nil, "c
+
+onfig"=>"release", "libraries"=>[]}}, "type"=>"application", "templates"=>["templates\\mdk\\flashloader\\LPC54114\\flashloader.uvprojx", "templates\\mdk\\flashloader\\LPC54114\\flashloader.uvoptx", "t
+
+emplates\\mdk\\flashloader\\LPC54114\\Debug_RAM.ini"], "outdir"=>"targets\\LPC54114/mdk/flashloader", "source"=>[{"source"=>"targets\\common\\linker\\arm\\LPC54114\\LPC5411x_ram_flashloader.scf", "vir
+
+tual-dir"=>"link"}, {"source"=>"targets\\LPC54114\\src\\startup\\arm\\startup_LPC54114_cm4.s", "virtual-dir"=>"src:startup"}, {"source"=>"targets\\LPC54114\\src\\startup\\system_LPC54114_cm4.c", "virt
+
+ual-dir"=>"src:startup"}, {"source"=>"targets\\LPC54114\\src\\bootloader_config.h", "virtual-dir"=>"LPC54114"}, {"source"=>"targets\\LPC54114\\src\\clock_config_LPC54114.c", "virtual-dir"=>"LPC54114"}
+
+, {"source"=>"targets\\LPC54114\\src\\hardware_init_LPC54114.c", "virtual-dir"=>"LPC54114"}, {"source"=>"targets\\LPC54114\\src\\memory_map_LPC54114.c", "virtual-dir"=>"LPC54114"}, {"source"=>"targets
+
+\\LPC54114\\src\\peripherals_LPC54114.c", "virtual-dir"=>"LPC54114"}, {"source"=>"targets\\LPC54114\\src\\peripherals_pinmux.h", "virtual-dir"=>"LPC54114"}, {"source"=>"targets\\LPC54114\\src\\target_
+
+config.h", "virtual-dir"=>"LPC54114"}, {"source"=>"targets\\common\\src\\pinmux_utility_lpc.c", "virtual-dir"=>"LPC54114"}, {"source"=>"targets\\common\\src\\bl_flexcomm_usart_irq_config_common.c", "v
+
+irtual-dir"=>"LPC54114"}, {"source"=>"targets\\common\\src\\bl_flexcomm_i2c_irq_config_common.c", "virtual-dir"=>"LPC54114"}, {"source"=>"targets\\common\\src\\bl_flexcomm_spi_irq_config_common.c", "v
+
+irtual-dir"=>"LPC54114"}, {"source"=>"src\\autobaud\\src\\autobaud_irq.c", "virtual-dir"=>"src:autobaud:src"}, {"source"=>"src\\bootloader\\bl_app_crc_check.h", "virtual-dir"=>"src:bootloader"}, {"sou
+
+rce"=>"src\\bootloader\\src\\flexcomm_usart_peripheral_interface.c", "virtual-dir"=>"src:bootloader:src"}, {"source"=>"src\\bootloader\\src\\flexcomm_i2c_peripheral_interface.c", "virtual-dir"=>"src:b
+
+ootloader:src"}, {"source"=>"src\\bootloader\\src\\flexcomm_spi_peripheral_interface.c", "virtual-dir"=>"src:bootloader:src"}, {"source"=>"src\\bootloader\\src\\usb_hid_msc_peripheral_interface.c", "v
+
+irtual-dir"=>"src:bootloader:src"}, {"source"=>"src\\bootloader\\src\\bl_app_crc_check.c", "virtual-dir"=>"src:bootloader:src"}, {"source"=>"src\\bootloader\\src\\bl_misc.c", "virtual-dir"=>"src:bootl
+
+oader:src"}, {"source"=>"src\\bootloader\\src\\bl_reliable_update.c", "virtual-dir"=>"src:bootloader:src"}, {"source"=>"src\\drivers\\lpc_crc\\fsl_crc.c", "virtual-dir"=>"src:drivers:crc"}, {"source"=
+
+>"src\\drivers\\microseconds\\src\\microseconds_sysclk.c", "virtual-dir"=>"src:drivers:microseconds:src"}, {"source"=>"src\\drivers\\flexcomm\\fsl_flexcomm.c", "virtual-dir"=>"src:drivers:flexcomm"}, 
+
+{"source"=>"src\\drivers\\flexcomm\\fsl_usart.c", "virtual-dir"=>"src:drivers:flexcomm"}, {"source"=>"src\\drivers\\flexcomm\\fsl_i2c.c", "virtual-dir"=>"src:drivers:flexcomm"}, {"source"=>"src\\drive
+
+rs\\flexcomm\\fsl_spi.c", "virtual-dir"=>"src:drivers:flexcomm"}, {"source"=>"src\\memory\\src\\sram_init_lpc.c", "virtual-dir"=>"src:memory:src"}, {"source"=>"src\\platform\\devices\\LPC54114\\fsl_cl
+
+ock.c", "virtual-dir"=>"src:platform"}, {"source"=>"src\\platform\\devices\\LPC54114\\fsl_power.c", "virtual-dir"=>"src:platform"}, {"source"=>"src\\platform\\devices\\LPC54114\\fsl_power_lib\\fsl_pow
+
+er_lib.c", "virtual-dir"=>"src:platform"}, {"source"=>"src\\platform\\devices\\LPC54114\\fsl_reset.c", "virtual-dir"=>"src:platform"}, {"source"=>"src\\usb\\device\\class\\usb_device_class.h", "virtua
+
+l-dir"=>"src:usb:device:calss"}, {"source"=>"src\\usb\\device\\class\\usb_device_class.c", "virtual-dir"=>"src:usb:device:calss"}, {"source"=>"src\\usb\\device\\class\\usb_device_hid.h", "virtual-dir"
+
+=>"src:usb:device:calss"}, {"source"=>"src\\usb\\device\\class\\usb_device_hid.c", "virtual-dir"=>"src:usb:device:calss"}, {"source"=>"src\\usb\\device\\class\\usb_device_msc.h", "virtual-dir"=>"src:u
+
+sb:device:calss"}, {"source"=>"src\\usb\\device\\class\\usb_device_msc.c", "virtual-dir"=>"src:usb:device:calss"}, {"source"=>"src\\usb\\device\\class\\usb_device_msc_ufi.h", "virtual-dir"=>"src:usb:d
+
+evice:calss"}, {"source"=>"src\\usb\\device\\class\\usb_device_msc_ufi.c", "virtual-dir"=>"src:usb:device:calss"}, {"source"=>"src\\usb\\device\\usb_device.h", "virtual-dir"=>"src:usb:device"}, {"sour
+
+ce"=>"src\\usb\\device\\usb_device_ch9.c", "virtual-dir"=>"src:usb:device"}, {"source"=>"src\\usb\\device\\usb_device_ch9.h", "virtual-dir"=>"src:usb:device"}, {"source"=>"src\\usb\\device\\usb_device
+
+_dci.c", "virtual-dir"=>"src:usb:device"}, {"source"=>"src\\usb\\device\\usb_device_dci.h", "virtual-dir"=>"src:usb:device"}, {"source"=>"src\\usb\\device\\usb_device_lpcip3511.c", "virtual-dir"=>"src
+
+:usb:device"}, {"source"=>"src\\usb\\device\\usb_device_lpcip3511.h", "virtual-dir"=>"src:usb:device"}, {"source"=>"src\\usb\\include\\usb.h", "virtual-dir"=>"src:usb:include"}, {"source"=>"src\\usb\\
+
+osa\\usb_osa.h", "virtual-dir"=>"src:usb:osa"}, {"source"=>"src\\usb\\osa\\usb_osa_bm.h", "virtual-dir"=>"src:usb:osa"}, {"source"=>"src\\usb\\osa\\usb_osa_bm.c", "virtual-dir"=>"src:usb:osa"}, {"sour
+
+ce"=>"src\\bm_usb\\bootloader_hid_report_ids.h", "virtual-dir"=>"src:usb:bm_composite"}, {"source"=>"src\\bm_usb\\fat_directory_entry.h", "virtual-dir"=>"src:usb:bm_composite"}, {"source"=>"src\\bm_us
+
+b\\composite.h", "virtual-dir"=>"src:usb:bm_composite"}, {"source"=>"src\\bm_usb\\composite.c", "virtual-dir"=>"src:usb:bm_composite"}, {"source"=>"src\\bm_usb\\hid_bootloader.h", "virtual-dir"=>"src:
+
+usb:bm_composite"}, {"source"=>"src\\bm_usb\\hid_bootloader.c", "virtual-dir"=>"src:usb:bm_composite"}, {"source"=>"src\\bm_usb\\msc_disk.h", "virtual-dir"=>"src:usb:bm_composite"}, {"source"=>"src\\b
+
+m_usb\\msc_disk.c", "virtual-dir"=>"src:usb:bm_composite"}, {"source"=>"src\\bm_usb\\usb_descriptor.h", "virtual-dir"=>"src:usb:bm_composite"}, {"source"=>"src\\bm_usb\\usb_descriptor.c", "virtual-dir
+
+"=>"src:usb:bm_composite"}, {"source"=>"targets\\LPC54114\\src\\usb_device_config.h", "virtual-dir"=>"src:usb:bm_composite"}, {"source"=>"src\\autobaud\\autobaud.h", "virtual-dir"=>"src:autobaud"}, {"
+
+source"=>"src\\bootloader\\bl_peripheral_interface.h", "virtual-dir"=>"src:bootloader"}, {"source"=>"src\\bootloader\\bl_user_entry.h", "virtual-dir"=>"src:bootloader"}, {"source"=>"src\\bootloader\\b
+
+l_version.h", "virtual-dir"=>"src:bootloader"}, {"source"=>"src\\bootloader\\bootloader.h", "virtual-dir"=>"src:bootloader"}, {"source"=>"src\\bootloader\\bl_command.h", "virtual-dir"=>"src:bootloader
+
+"}, {"source"=>"src\\bootloader\\bl_context.h", "virtual-dir"=>"src:bootloader"}, {"source"=>"src\\bootloader\\bl_peripheral.h", "virtual-dir"=>"src:bootloader"}, {"source"=>"src\\bootloader\\bl_shutd
+
+own_cleanup.h", "virtual-dir"=>"src:bootloader"}, {"source"=>"src\\bootloader\\src\\bl_user_entry.c", "virtual-dir"=>"src:bootloader:src"}, {"source"=>"src\\bootloader\\src\\bl_main.c", "virtual-dir"=
+
+>"src:bootloader:src"}, {"source"=>"src\\bootloader\\src\\bl_context.c", "virtual-dir"=>"src:bootloader:src"}, {"source"=>"src\\bootloader\\src\\bl_exception_handler.c", "virtual-dir"=>"src:bootloader
+
+:src"}, {"source"=>"src\\bootloader\\src\\bl_tree_root.c", "virtual-dir"=>"src:bootloader:src"}, {"source"=>"src\\bootloader\\src\\bl_command.c", "virtual-dir"=>"src:bootloader:src"}, {"source"=>"src\
+
+\bootloader\\src\\bl_shutdown_cleanup.c", "virtual-dir"=>"src:bootloader:src"}, {"source"=>"src\\crc\\crc16.h", "virtual-dir"=>"src:crc"}, {"source"=>"src\\crc\\crc32.h", "virtual-dir"=>"src:crc"}, {"
+
+source"=>"src\\crc\\src\\crc16.c", "virtual-dir"=>"src:crc:src"}, {"source"=>"src\\crc\\src\\crc32.c", "virtual-dir"=>"src:crc:src"}, {"source"=>"src\\drivers\\lpc_iocon\\fsl_iocon.h", "virtual-dir"=>
+
+"src:drivers:iocon"}, {"source"=>"src\\drivers\\lpc_gpio\\fsl_gpio.c", "virtual-dir"=>"src:drivers:gpio"}, {"source"=>"src\\drivers\\gint\\fsl_gint.c", "virtual-dir"=>"src:drivers:gint"}, {"source"=>"
+
+src\\drivers\\flashiap\\fsl_flashiap.c", "virtual-dir"=>"src:drivers:flashiap"}, {"source"=>"src\\drivers\\flashiap\\fsl_flashiap.h", "virtual-dir"=>"src:drivers:flashiap"}, {"source"=>"src\\drivers\\
+
+flashiap_wrapper\\fsl_flashiap_wrapper.c", "virtual-dir"=>"src:drivers:flashiap_wrapper"}, {"source"=>"src\\drivers\\flashiap_wrapper\\fsl_flashiap_wrapper.h", "virtual-dir"=>"src:drivers:flashiap_wra
+
+pper"}, {"source"=>"src\\drivers\\microseconds\\microseconds.h", "virtual-dir"=>"src:drivers:microseconds"}, {"source"=>"src\\include\\bootloader_common.h", "virtual-dir"=>"src:include"}, {"source"=>"
+
+src\\memory\\memory.h", "virtual-dir"=>"src:memory"}, {"source"=>"src\\memory\\src\\memory.c", "virtual-dir"=>"src:memory:src"}, {"source"=>"src\\memory\\src\\device_memory.h", "virtual-dir"=>"src:mem
+
+ory:src"}, {"source"=>"src\\memory\\src\\device_memory.c", "virtual-dir"=>"src:memory:src"}, {"source"=>"src\\memory\\src\\flashiap_memory.h", "virtual-dir"=>"src:memory:src"}, {"source"=>"src\\memory
+
+\\src\\flashiap_memory.c", "virtual-dir"=>"src:memory:src"}, {"source"=>"src\\memory\\src\\normal_memory.h", "virtual-dir"=>"src:memory:src"}, {"source"=>"src\\memory\\src\\normal_memory.c", "virtual-
+
+dir"=>"src:memory:src"}, {"source"=>"src\\memory\\src\\pattern_fill.h", "virtual-dir"=>"src:memory:src"}, {"source"=>"src\\memory\\src\\pattern_fill.s", "virtual-dir"=>"src:memory:src"}, {"source"=>"s
+
+rc\\packet\\command_packet.h", "virtual-dir"=>"src:packet"}, {"source"=>"src\\packet\\serial_packet.h", "virtual-dir"=>"src:packet"}, {"source"=>"src\\packet\\src\\serial_packet.c", "virtual-dir"=>"sr
+
+c:packet:src"}, {"source"=>"src\\property\\property.h", "virtual-dir"=>"src:property"}, {"source"=>"src\\property\\src\\property.c", "virtual-dir"=>"src:property:src"}, {"source"=>"src\\sbloader\\sblo
+
+ader.h", "virtual-dir"=>"src:sbloader"}, {"source"=>"src\\sbloader\\src\\sbloader.c", "virtual-dir"=>"src:sbloader:src"}, {"source"=>"src\\startup\\startup.c", "virtual-dir"=>"src:startup"}, {"source"
+
+=>"src\\utilities\\fsl_rtos_abstraction.h", "virtual-dir"=>"src:utilities"}, {"source"=>"src\\utilities\\src\\fsl_assert.c", "virtual-dir"=>"src:utilities:src"}, {"source"=>"src\\utilities\\src\\fsl_r
+
+tos_abstraction.c", "virtual-dir"=>"src:utilities:src"}], "document"=>{"board"=>"flashloader", "name"=>"flashloader"}}, "kds"=>{"targets"=>{"debug"=>{"cc-define"=>{"DEBUG"=>nil, "USB_STACK_BM"=>nil, "
+
+CPU_LPC54114J256BD64_cm4"=>nil, "CPU_IS_ARM_CORTEX_M4=1"=>nil, "BL_TARGET_RAM"=>nil}, "cx-define"=>{"DEBUG"=>nil}, "as-define"=>{"DEBUG"=>nil}, "identifier"=>"Debug", "target"=>"debug", "cc-flags"=>["
+
+-g", "-mcpu=cortex-m4", "-mfloat-abi=hard", "-mfpu=fpv4-sp-d16", "-Wall", "-fno-common", "-ffunction-sections", "-fdata-sections", "-ffreestanding", "-fno-builtin", "-fshort-wchar", "-mthumb", "-mapcs
+
+", "-std=gnu99", "-flto", "-fno-inline-small-functions"], "cx-flags"=>["-g", "-mcpu=cortex-m4", "-Wall", "-mfloat-abi=hard", "-mfpu=fpv4-sp-d16"], "ld-flags"=>["-g", "-mfloat-abi=hard", "-mfpu=fpv4-sp
+
+-d16", "--specs=nano.specs", "-lm", "-lg", "-lgcc", "-lnosys", "-Wall", "-fno-common", "-ffunction-sections", "-fdata-sections", "-ffreestanding", "-fno-builtin", "-fshort-wchar -Wl,--no-wchar-size-wa
+
+rning", "-mthumb", "-mapcs", "-Xlinker --gc-sections", "-Xlinker -static", "-Xlinker -z", "-Xlinker muldefs", "-flto"], "ad-flags"=>["-Xlinker --defsym=__ram_vector_table__=1"], "as-flags"=>["-mcpu=co
+
+rtex-m4", "-Wall", "-mfloat-abi=hard", "-mfpu=fpv4-sp-d16", "-fno-common", "-ffunction-sections", "-fdata-sections", "-ffreestanding", "-fno-builtin", "-fshort-wchar", "-mthumb", "-mapcs", "-std=gnu99
+
+"], "cp-define"=>{"LPC54114J256_M4"=>"NXP LPC54114J256_M4"}, "cc-include"=>[{"path"=>"targets\\LPC54114\\src"}, {"path"=>"targets\\LPC54114\\src\\startup"}, {"path"=>"src\\platform\\devices\\LPC54114"
+
+}, {"path"=>"src\\autobaud"}, {"path"=>"src\\usb\\include"}, {"path"=>"src\\usb\\osa"}, {"path"=>"src\\usb\\device"}, {"path"=>"src\\usb\\device\\class"}, {"path"=>"src\\bm_usb"}, {"path"=>"src\\inclu
+
+de"}, {"path"=>"src\\platform"}, {"path"=>"src\\platform\\devices"}, {"path"=>"src\\platform\\CMSIS\\Include"}, {"path"=>"src"}, {"path"=>"src\\drivers"}, {"path"=>"src\\startup"}, {"path"=>"src\\driv
+
+ers\\common"}], "as-include"=>[{"path"=>"src\\include"}], "ar-flags"=>[], "linker-file"=>{"path"=>"targets\\common\\linker\\kds\\LPC54114\\LPC5411x_ram_flashloader.ld"}, "binary-file"=>nil, "config"=>
+
+"debug", "libraries"=>[]}, "release"=>{"cc-define"=>{"NDEBUG"=>nil, "USB_STACK_BM"=>nil, "CPU_LPC54114J256BD64_cm4"=>nil, "CPU_IS_ARM_CORTEX_M4=1"=>nil, "BL_TARGET_RAM"=>nil}, "cx-define"=>{"NDEBUG"=>
+
+nil}, "as-define"=>{"NDEBUG"=>nil}, "identifier"=>"Release", "target"=>"release", "cc-flags"=>["-Os", "-g", "-mcpu=cortex-m4", "-mfloat-abi=hard", "-mfpu=fpv4-sp-d16", "-Wall", "-fno-common", "-ffunct
+
+ion-sections", "-fdata-sections", "-ffreestanding", "-fno-builtin", "-fshort-wchar", "-mthumb", "-mapcs", "-std=gnu99", "-flto", "-fno-inline-small-functions"], "cx-flags"=>["-Os", "-g", "-mcpu=cortex
+
+-m4", "-Wall", "-mfloat-abi=hard", "-mfpu=fpv4-sp-d16"], "as-flags"=>["-Os", "-mcpu=cortex-m4", "-Wall", "-mfloat-abi=hard", "-mfpu=fpv4-sp-d16", "-fno-common", "-ffunction-sections", "-fdata-sections
+
+", "-ffreestanding", "-fno-builtin", "-fshort-wchar", "-mthumb", "-mapcs", "-std=gnu99"], "ld-flags"=>["-Os", "-g", "-mfloat-abi=hard", "-mfpu=fpv4-sp-d16", "--specs=nano.specs", "-lm", "-lg", "-lgcc"
+
+, "-lnosys", "-Wall", "-fno-common", "-ffunction-sections", "-fdata-sections", "-ffreestanding", "-fno-builtin", "-fshort-wchar -Wl,--no-wchar-size-warning", "-mthumb", "-mapcs", "-Xlinker --gc-sectio
+
+ns", "-Xlinker -static", "-Xlinker -z", "-Xlinker muldefs", "-flto"], "ad-flags"=>["-Xlinker --defsym=__ram_vector_table__=1"], "cp-define"=>{"LPC54114J256_M4"=>"NXP LPC54114J256_M4"}, "cc-include"=>[
+
+{"path"=>"targets\\LPC54114\\src"}, {"path"=>"targets\\LPC54114\\src\\startup"}, {"path"=>"src\\platform\\devices\\LPC54114"}, {"path"=>"src\\autobaud"}, {"path"=>"src\\usb\\include"}, {"path"=>"src\\
+
+usb\\osa"}, {"path"=>"src\\usb\\device"}, {"path"=>"src\\usb\\device\\class"}, {"path"=>"src\\bm_usb"}, {"path"=>"src\\include"}, {"path"=>"src\\platform"}, {"path"=>"src\\platform\\devices"}, {"path"
+
+=>"src\\platform\\CMSIS\\Include"}, {"path"=>"src"}, {"path"=>"src\\drivers"}, {"path"=>"src\\startup"}, {"path"=>"src\\drivers\\common"}], "as-include"=>[{"path"=>"src\\include"}], "ar-flags"=>[], "l
+
+inker-file"=>{"path"=>"targets\\common\\linker\\kds\\LPC54114\\LPC5411x_ram_flashloader.ld"}, "binary-file"=>nil, "config"=>"release", "libraries"=>[]}}, "type"=>"application", "templates"=>["template
+
+s/kds/flashloader/LPC54114/.cproject", "templates/kds/flashloader/LPC54114/.project", "templates/kds/flashloader/LPC54114/Debug Jlink.launch", "templates/kds/flashloader/LPC54114/Release Jlink.launch"
+
+, "templates/kds/flashloader/LPC54114/Debug PNE.launch", "templates/kds/flashloader/LPC54114/Release PNE.launch", "templates/kds/flashloader/LPC54114/Debug CMSISDAP.launch", "templates/kds/flashloader
+
+/LPC54114/Release CMSISDAP.launch"], "outdir"=>"targets\\LPC54114/kds/flashloader", "source"=>[{"source"=>"targets\\common\\linker\\kds\\LPC54114\\LPC5411x_ram_flashloader.ld", "virtual-dir"=>"link"},
+
+ {"source"=>"src\\startup\\crt0_gcc.S", "virtual-dir"=>"src:startup"}, {"source"=>"src\\memory\\src\\pattern_fill_gcc.S", "virtual-dir"=>"src:memory:src"}, {"source"=>"targets\\LPC54114\\src\\startup\
+
+\gcc\\startup_LPC54114_cm4.S", "virtual-dir"=>"src:startup"}, {"source"=>"targets\\LPC54114\\src\\startup\\system_LPC54114_cm4.c", "virtual-dir"=>"src:startup"}, {"source"=>"targets\\LPC54114\\src\\bo
+
+otloader_config.h", "virtual-dir"=>"LPC54114"}, {"source"=>"targets\\LPC54114\\src\\clock_config_LPC54114.c", "virtual-dir"=>"LPC54114"}, {"source"=>"targets\\LPC54114\\src\\hardware_init_LPC54114.c",
+
+ "virtual-dir"=>"LPC54114"}, {"source"=>"targets\\LPC54114\\src\\memory_map_LPC54114.c", "virtual-dir"=>"LPC54114"}, {"source"=>"targets\\LPC54114\\src\\peripherals_LPC54114.c", "virtual-dir"=>"LPC541
+
+14"}, {"source"=>"targets\\LPC54114\\src\\peripherals_pinmux.h", "virtual-dir"=>"LPC54114"}, {"source"=>"targets\\LPC54114\\src\\target_config.h", "virtual-dir"=>"LPC54114"}, {"source"=>"targets\\comm
+
+on\\src\\pinmux_utility_lpc.c", "virtual-dir"=>"LPC54114"}, {"source"=>"targets\\common\\src\\bl_flexcomm_usart_irq_config_common.c", "virtual-dir"=>"LPC54114"}, {"source"=>"targets\\common\\src\\bl_f
+
+lexcomm_i2c_irq_config_common.c", "virtual-dir"=>"LPC54114"}, {"source"=>"targets\\common\\src\\bl_flexcomm_spi_irq_config_common.c", "virtual-dir"=>"LPC54114"}, {"source"=>"src\\autobaud\\src\\autoba
+
+ud_irq.c", "virtual-dir"=>"src:autobaud:src"}, {"source"=>"src\\bootloader\\bl_app_crc_check.h", "virtual-dir"=>"src:bootloader"}, {"source"=>"src\\bootloader\\src\\flexcomm_usart_peripheral_interface
+
+.c", "virtual-dir"=>"src:bootloader:src"}, {"source"=>"src\\bootloader\\src\\flexcomm_i2c_peripheral_interface.c", "virtual-dir"=>"src:bootloader:src"}, {"source"=>"src\\bootloader\\src\\flexcomm_spi_
+
+peripheral_interface.c", "virtual-dir"=>"src:bootloader:src"}, {"source"=>"src\\bootloader\\src\\usb_hid_msc_peripheral_interface.c", "virtual-dir"=>"src:bootloader:src"}, {"source"=>"src\\bootloader\
+
+\src\\bl_app_crc_check.c", "virtual-dir"=>"src:bootloader:src"}, {"source"=>"src\\bootloader\\src\\bl_misc.c", "virtual-dir"=>"src:bootloader:src"}, {"source"=>"src\\bootloader\\src\\bl_reliable_updat
+
+e.c", "virtual-dir"=>"src:bootloader:src"}, {"source"=>"src\\drivers\\lpc_crc\\fsl_crc.c", "virtual-dir"=>"src:drivers:crc"}, {"source"=>"src\\drivers\\microseconds\\src\\microseconds_sysclk.c", "virt
+
+ual-dir"=>"src:drivers:microseconds:src"}, {"source"=>"src\\drivers\\flexcomm\\fsl_flexcomm.c", "virtual-dir"=>"src:drivers:flexcomm"}, {"source"=>"src\\drivers\\flexcomm\\fsl_usart.c", "virtual-dir"=
+
+>"src:drivers:flexcomm"}, {"source"=>"src\\drivers\\flexcomm\\fsl_i2c.c", "virtual-dir"=>"src:drivers:flexcomm"}, {"source"=>"src\\drivers\\flexcomm\\fsl_spi.c", "virtual-dir"=>"src:drivers:flexcomm"}
+
+, {"source"=>"src\\memory\\src\\sram_init_lpc.c", "virtual-dir"=>"src:memory:src"}, {"source"=>"src\\platform\\devices\\LPC54114\\fsl_clock.c", "virtual-dir"=>"src:platform"}, {"source"=>"src\\platfor
+
+m\\devices\\LPC54114\\fsl_power.c", "virtual-dir"=>"src:platform"}, {"source"=>"src\\platform\\devices\\LPC54114\\fsl_power_lib\\fsl_power_lib.c", "virtual-dir"=>"src:platform"}, {"source"=>"src\\plat
+
+form\\devices\\LPC54114\\fsl_reset.c", "virtual-dir"=>"src:platform"}, {"source"=>"src\\usb\\device\\class\\usb_device_class.h", "virtual-dir"=>"src:usb:device:calss"}, {"source"=>"src\\usb\\device\\c
+
+lass\\usb_device_class.c", "virtual-dir"=>"src:usb:device:calss"}, {"source"=>"src\\usb\\device\\class\\usb_device_hid.h", "virtual-dir"=>"src:usb:device:calss"}, {"source"=>"src\\usb\\device\\class\\
+
+usb_device_hid.c", "virtual-dir"=>"src:usb:device:calss"}, {"source"=>"src\\usb\\device\\class\\usb_device_msc.h", "virtual-dir"=>"src:usb:device:calss"}, {"source"=>"src\\usb\\device\\class\\usb_devi
+
+ce_msc.c", "virtual-dir"=>"src:usb:device:calss"}, {"source"=>"src\\usb\\device\\class\\usb_device_msc_ufi.h", "virtual-dir"=>"src:usb:device:calss"}, {"source"=>"src\\usb\\device\\class\\usb_device_m
+
+sc_ufi.c", "virtual-dir"=>"src:usb:device:calss"}, {"source"=>"src\\usb\\device\\usb_device.h", "virtual-dir"=>"src:usb:device"}, {"source"=>"src\\usb\\device\\usb_device_ch9.c", "virtual-dir"=>"src:u
+
+sb:device"}, {"source"=>"src\\usb\\device\\usb_device_ch9.h", "virtual-dir"=>"src:usb:device"}, {"source"=>"src\\usb\\device\\usb_device_dci.c", "virtual-dir"=>"src:usb:device"}, {"source"=>"src\\usb\
+
+\device\\usb_device_dci.h", "virtual-dir"=>"src:usb:device"}, {"source"=>"src\\usb\\device\\usb_device_lpcip3511.c", "virtual-dir"=>"src:usb:device"}, {"source"=>"src\\usb\\device\\usb_device_lpcip351
+
+1.h", "virtual-dir"=>"src:usb:device"}, {"source"=>"src\\usb\\include\\usb.h", "virtual-dir"=>"src:usb:include"}, {"source"=>"src\\usb\\osa\\usb_osa.h", "virtual-dir"=>"src:usb:osa"}, {"source"=>"src\
+
+\usb\\osa\\usb_osa_bm.h", "virtual-dir"=>"src:usb:osa"}, {"source"=>"src\\usb\\osa\\usb_osa_bm.c", "virtual-dir"=>"src:usb:osa"}, {"source"=>"src\\bm_usb\\bootloader_hid_report_ids.h", "virtual-dir"=>
+
+"src:usb:bm_composite"}, {"source"=>"src\\bm_usb\\fat_directory_entry.h", "virtual-dir"=>"src:usb:bm_composite"}, {"source"=>"src\\bm_usb\\composite.h", "virtual-dir"=>"src:usb:bm_composite"}, {"sourc
+
+e"=>"src\\bm_usb\\composite.c", "virtual-dir"=>"src:usb:bm_composite"}, {"source"=>"src\\bm_usb\\hid_bootloader.h", "virtual-dir"=>"src:usb:bm_composite"}, {"source"=>"src\\bm_usb\\hid_bootloader.c", 
+
+"virtual-dir"=>"src:usb:bm_composite"}, {"source"=>"src\\bm_usb\\msc_disk.h", "virtual-dir"=>"src:usb:bm_composite"}, {"source"=>"src\\bm_usb\\msc_disk.c", "virtual-dir"=>"src:usb:bm_composite"}, {"so
+
+urce"=>"src\\bm_usb\\usb_descriptor.h", "virtual-dir"=>"src:usb:bm_composite"}, {"source"=>"src\\bm_usb\\usb_descriptor.c", "virtual-dir"=>"src:usb:bm_composite"}, {"source"=>"targets\\LPC54114\\src\\
+
+usb_device_config.h", "virtual-dir"=>"src:usb:bm_composite"}, {"source"=>"src\\autobaud\\autobaud.h", "virtual-dir"=>"src:autobaud"}, {"source"=>"src\\bootloader\\bl_peripheral_interface.h", "virtual-
+
+dir"=>"src:bootloader"}, {"source"=>"src\\bootloader\\bl_user_entry.h", "virtual-dir"=>"src:bootloader"}, {"source"=>"src\\bootloader\\bl_version.h", "virtual-dir"=>"src:bootloader"}, {"source"=>"src\
+
+\bootloader\\bootloader.h", "virtual-dir"=>"src:bootloader"}, {"source"=>"src\\bootloader\\bl_command.h", "virtual-dir"=>"src:bootloader"}, {"source"=>"src\\bootloader\\bl_context.h", "virtual-dir"=>"
+
+src:bootloader"}, {"source"=>"src\\bootloader\\bl_peripheral.h", "virtual-dir"=>"src:bootloader"}, {"source"=>"src\\bootloader\\bl_shutdown_cleanup.h", "virtual-dir"=>"src:bootloader"}, {"source"=>"sr
+
+c\\bootloader\\src\\bl_user_entry.c", "virtual-dir"=>"src:bootloader:src"}, {"source"=>"src\\bootloader\\src\\bl_main.c", "virtual-dir"=>"src:bootloader:src"}, {"source"=>"src\\bootloader\\src\\bl_con
+
+text.c", "virtual-dir"=>"src:bootloader:src"}, {"source"=>"src\\bootloader\\src\\bl_exception_handler.c", "virtual-dir"=>"src:bootloader:src"}, {"source"=>"src\\bootloader\\src\\bl_tree_root.c", "virt
+
+ual-dir"=>"src:bootloader:src"}, {"source"=>"src\\bootloader\\src\\bl_command.c", "virtual-dir"=>"src:bootloader:src"}, {"source"=>"src\\bootloader\\src\\bl_shutdown_cleanup.c", "virtual-dir"=>"src:bo
+
+otloader:src"}, {"source"=>"src\\crc\\crc16.h", "virtual-dir"=>"src:crc"}, {"source"=>"src\\crc\\crc32.h", "virtual-dir"=>"src:crc"}, {"source"=>"src\\crc\\src\\crc16.c", "virtual-dir"=>"src:crc:src"}
+
+, {"source"=>"src\\crc\\src\\crc32.c", "virtual-dir"=>"src:crc:src"}, {"source"=>"src\\drivers\\lpc_iocon\\fsl_iocon.h", "virtual-dir"=>"src:drivers:iocon"}, {"source"=>"src\\drivers\\lpc_gpio\\fsl_gp
+
+io.c", "virtual-dir"=>"src:drivers:gpio"}, {"source"=>"src\\drivers\\gint\\fsl_gint.c", "virtual-dir"=>"src:drivers:gint"}, {"source"=>"src\\drivers\\flashiap\\fsl_flashiap.c", "virtual-dir"=>"src:dri
+
+vers:flashiap"}, {"source"=>"src\\drivers\\flashiap\\fsl_flashiap.h", "virtual-dir"=>"src:drivers:flashiap"}, {"source"=>"src\\drivers\\flashiap_wrapper\\fsl_flashiap_wrapper.c", "virtual-dir"=>"src:d
+
+rivers:flashiap_wrapper"}, {"source"=>"src\\drivers\\flashiap_wrapper\\fsl_flashiap_wrapper.h", "virtual-dir"=>"src:drivers:flashiap_wrapper"}, {"source"=>"src\\drivers\\microseconds\\microseconds.h",
+
+ "virtual-dir"=>"src:drivers:microseconds"}, {"source"=>"src\\include\\bootloader_common.h", "virtual-dir"=>"src:include"}, {"source"=>"src\\memory\\memory.h", "virtual-dir"=>"src:memory"}, {"source"=
+
+>"src\\memory\\src\\memory.c", "virtual-dir"=>"src:memory:src"}, {"source"=>"src\\memory\\src\\device_memory.h", "virtual-dir"=>"src:memory:src"}, {"source"=>"src\\memory\\src\\device_memory.c", "virt
+
+ual-dir"=>"src:memory:src"}, {"source"=>"src\\memory\\src\\flashiap_memory.h", "virtual-dir"=>"src:memory:src"}, {"source"=>"src\\memory\\src\\flashiap_memory.c", "virtual-dir"=>"src:memory:src"}, {"s
+
+ource"=>"src\\memory\\src\\normal_memory.h", "virtual-dir"=>"src:memory:src"}, {"source"=>"src\\memory\\src\\normal_memory.c", "virtual-dir"=>"src:memory:src"}, {"source"=>"src\\memory\\src\\pattern_f
+
+ill.h", "virtual-dir"=>"src:memory:src"}, {"source"=>"src\\memory\\src\\pattern_fill.s", "virtual-dir"=>"src:memory:src"}, {"source"=>"src\\packet\\command_packet.h", "virtual-dir"=>"src:packet"}, {"s
+
+ource"=>"src\\packet\\serial_packet.h", "virtual-dir"=>"src:packet"}, {"source"=>"src\\packet\\src\\serial_packet.c", "virtual-dir"=>"src:packet:src"}, {"source"=>"src\\property\\property.h", "virtual
+
+-dir"=>"src:property"}, {"source"=>"src\\property\\src\\property.c", "virtual-dir"=>"src:property:src"}, {"source"=>"src\\sbloader\\sbloader.h", "virtual-dir"=>"src:sbloader"}, {"source"=>"src\\sbload
+
+er\\src\\sbloader.c", "virtual-dir"=>"src:sbloader:src"}, {"source"=>"src\\startup\\startup.c", "virtual-dir"=>"src:startup"}, {"source"=>"src\\utilities\\fsl_rtos_abstraction.h", "virtual-dir"=>"src:
+
+utilities"}, {"source"=>"src\\utilities\\src\\fsl_assert.c", "virtual-dir"=>"src:utilities:src"}, {"source"=>"src\\utilities\\src\\fsl_rtos_abstraction.c", "virtual-dir"=>"src:utilities:src"}], "docum
+
+ent"=>{"board"=>"flashloader", "name"=>"flashloader"}}, "mcux"=>{"targets"=>{"debug"=>{"cc-define"=>{"DEBUG"=>nil, "USB_STACK_BM"=>nil, "CPU_LPC54114J256BD64_cm4"=>nil, "CPU_IS_ARM_CORTEX_M4=1"=>nil, 
+
+"BL_TARGET_RAM"=>nil}, "cx-define"=>{"DEBUG"=>nil}, "as-define"=>{"DEBUG"=>nil}, "cc-flags"=>["-g", "-mcpu=cortex-m4", "-mfloat-abi=hard", "-mfpu=fpv4-sp-d16", "-Wall", "-fno-common", "-ffunction-sect
+
+ions", "-fdata-sections", "-ffreestanding", "-fno-builtin", "-fshort-wchar", "-mthumb", "-mapcs", "-std=gnu99", "-flto", "-fno-inline-small-functions"], "cx-flags"=>["-g", "-mcpu=cortex-m4", "-Wall", 
+
+"-mfloat-abi=hard", "-mfpu=fpv4-sp-d16"], "ld-flags"=>["-g", "-mcpu=cortex-m4", "-mfloat-abi=hard", "-mfpu=fpv4-sp-d16", "--specs=nano.specs", "-lm", "-lg", "-lgcc", "-lnosys", "-Wall", "-fno-common",
+
+ "-ffunction-sections", "-fdata-sections", "-ffreestanding", "-fno-builtin", "-fshort-wchar -Wl,--no-wchar-size-warning", "-mthumb", "-mapcs", "-Xlinker --gc-sections", "-Xlinker -static", "-Xlinker -
+
+z", "-Xlinker muldefs", "-flto"], "ad-flags"=>["-Xlinker --defsym=__ram_vector_table__=1"], "as-flags"=>["-mcpu=cortex-m4", "-Wall", "-mfloat-abi=hard", "-mfpu=fpv4-sp-d16", "-fno-common", "-ffunction
+
+-sections", "-fdata-sections", "-ffreestanding", "-fno-builtin", "-fshort-wchar", "-mthumb", "-mapcs", "-std=gnu99"], "cp-define"=>{"LPC54114J256_M4"=>"NXP LPC54114J256_M4"}, "cc-include"=>[{"path"=>"
+
+targets\\LPC54114\\src"}, {"path"=>"targets\\LPC54114\\src\\startup"}, {"path"=>"src\\platform\\devices\\LPC54114"}, {"path"=>"src\\autobaud"}, {"path"=>"src\\usb\\include"}, {"path"=>"src\\usb\\osa"}
+
+, {"path"=>"src\\usb\\device"}, {"path"=>"src\\usb\\device\\class"}, {"path"=>"src\\bm_usb"}, {"path"=>"src\\include"}, {"path"=>"src\\platform"}, {"path"=>"src\\platform\\devices"}, {"path"=>"src\\pl
+
+atform\\CMSIS\\Include"}, {"path"=>"src"}, {"path"=>"src\\drivers"}, {"path"=>"src\\startup"}, {"path"=>"src\\drivers\\common"}], "as-include"=>[{"path"=>"src\\include"}], "ar-flags"=>[], "binary-file
+
+"=>nil, "identifier"=>"Debug", "config"=>"debug", "target"=>"debug", "libraries"=>[]}, "release"=>{"cc-define"=>{"NDEBUG"=>nil, "USB_STACK_BM"=>nil, "CPU_LPC54114J256BD64_cm4"=>nil, "CPU_IS_ARM_CORTEX
+
+_M4=1"=>nil, "BL_TARGET_RAM"=>nil}, "cx-define"=>{"NDEBUG"=>nil}, "as-define"=>{"NDEBUG"=>nil}, "cc-flags"=>["-Os", "-g", "-mcpu=cortex-m4", "-mfloat-abi=hard", "-mfpu=fpv4-sp-d16", "-Wall", "-fno-com
+
+mon", "-ffunction-sections", "-fdata-sections", "-ffreestanding", "-fno-builtin", "-fshort-wchar", "-mthumb", "-mapcs", "-std=gnu99", "-flto", "-fno-inline-small-functions"], "cx-flags"=>["-Os", "-g",
+
+ "-mcpu=cortex-m4", "-Wall", "-mfloat-abi=hard", "-mfpu=fpv4-sp-d16"], "as-flags"=>["-Os", "-mcpu=cortex-m4", "-Wall", "-mfloat-abi=hard", "-mfpu=fpv4-sp-d16", "-fno-common", "-ffunction-sections", "-
+
+fdata-sections", "-ffreestanding", "-fno-builtin", "-fshort-wchar", "-mthumb", "-mapcs", "-std=gnu99"], "ld-flags"=>["-Os", "-g", "-mcpu=cortex-m4", "-mfloat-abi=hard", "-mfpu=fpv4-sp-d16", "--specs=n
+
+ano.specs", "-lm", "-lg", "-lgcc", "-lnosys", "-Wall", "-fno-common", "-ffunction-sections", "-fdata-sections", "-ffreestanding", "-fno-builtin", "-fshort-wchar -Wl,--no-wchar-size-warning", "-mthumb"
+
+, "-mapcs", "-Xlinker --gc-sections", "-Xlinker -static", "-Xlinker -z", "-Xlinker muldefs", "-flto"], "ad-flags"=>["-Xlinker --defsym=__ram_vector_table__=1"], "cp-define"=>{"LPC54114J256_M4"=>"NXP L
+
+PC54114J256_M4"}, "cc-include"=>[{"path"=>"targets\\LPC54114\\src"}, {"path"=>"targets\\LPC54114\\src\\startup"}, {"path"=>"src\\platform\\devices\\LPC54114"}, {"path"=>"src\\autobaud"}, {"path"=>"src
+
+\\usb\\include"}, {"path"=>"src\\usb\\osa"}, {"path"=>"src\\usb\\device"}, {"path"=>"src\\usb\\device\\class"}, {"path"=>"src\\bm_usb"}, {"path"=>"src\\include"}, {"path"=>"src\\platform"}, {"path"=>"
+
+src\\platform\\devices"}, {"path"=>"src\\platform\\CMSIS\\Include"}, {"path"=>"src"}, {"path"=>"src\\drivers"}, {"path"=>"src\\startup"}, {"path"=>"src\\drivers\\common"}], "as-include"=>[{"path"=>"sr
+
+c\\include"}], "ar-flags"=>[], "binary-file"=>nil, "identifier"=>"Release", "config"=>"release", "target"=>"release", "libraries"=>[]}}, "type"=>"application", "templates"=>nil, "outdir"=>"targets\\LP
+
+C54114/mcux/flashloader", "source"=>[{"source"=>"targets\\LPC54114\\src\\startup\\mcuxpresso\\startup_lpc5411x.c", "virtual-dir"=>"src:startup"}, {"source"=>"targets\\LPC54114\\src\\startup\\system_LP
+
+C54114_cm4.c", "virtual-dir"=>"src:startup"}, {"source"=>"targets\\LPC54114\\src\\bootloader_config.h", "virtual-dir"=>"LPC54114"}, {"source"=>"targets\\LPC54114\\src\\clock_config_LPC54114.c", "virtu
+
+al-dir"=>"LPC54114"}, {"source"=>"targets\\LPC54114\\src\\hardware_init_LPC54114.c", "virtual-dir"=>"LPC54114"}, {"source"=>"targets\\LPC54114\\src\\memory_map_LPC54114.c", "virtual-dir"=>"LPC54114"},
+
+ {"source"=>"targets\\LPC54114\\src\\peripherals_LPC54114.c", "virtual-dir"=>"LPC54114"}, {"source"=>"targets\\LPC54114\\src\\peripherals_pinmux.h", "virtual-dir"=>"LPC54114"}, {"source"=>"targets\\LP
+
+C54114\\src\\target_config.h", "virtual-dir"=>"LPC54114"}, {"source"=>"targets\\common\\src\\pinmux_utility_lpc.c", "virtual-dir"=>"LPC54114"}, {"source"=>"targets\\common\\src\\bl_flexcomm_usart_irq_
+
+config_common.c", "virtual-dir"=>"LPC54114"}, {"source"=>"targets\\common\\src\\bl_flexcomm_i2c_irq_config_common.c", "virtual-dir"=>"LPC54114"}, {"source"=>"targets\\common\\src\\bl_flexcomm_spi_irq_
+
+config_common.c", "virtual-dir"=>"LPC54114"}, {"source"=>"src\\autobaud\\src\\autobaud_irq.c", "virtual-dir"=>"src:autobaud:src"}, {"source"=>"src\\bootloader\\bl_app_crc_check.h", "virtual-dir"=>"src
+
+:bootloader"}, {"source"=>"src\\bootloader\\src\\flexcomm_usart_peripheral_interface.c", "virtual-dir"=>"src:bootloader:src"}, {"source"=>"src\\bootloader\\src\\flexcomm_i2c_peripheral_interface.c", "
+
+virtual-dir"=>"src:bootloader:src"}, {"source"=>"src\\bootloader\\src\\flexcomm_spi_peripheral_interface.c", "virtual-dir"=>"src:bootloader:src"}, {"source"=>"src\\bootloader\\src\\usb_hid_msc_periphe
+
+ral_interface.c", "virtual-dir"=>"src:bootloader:src"}, {"source"=>"src\\bootloader\\src\\bl_app_crc_check.c", "virtual-dir"=>"src:bootloader:src"}, {"source"=>"src\\bootloader\\src\\bl_misc.c", "virt
+
+ual-dir"=>"src:bootloader:src"}, {"source"=>"src\\bootloader\\src\\bl_reliable_update.c", "virtual-dir"=>"src:bootloader:src"}, {"source"=>"src\\drivers\\lpc_crc\\fsl_crc.c", "virtual-dir"=>"src:drive
+
+rs:crc"}, {"source"=>"src\\drivers\\microseconds\\src\\microseconds_sysclk.c", "virtual-dir"=>"src:drivers:microseconds:src"}, {"source"=>"src\\drivers\\flexcomm\\fsl_flexcomm.c", "virtual-dir"=>"src:
+
+drivers:flexcomm"}, {"source"=>"src\\drivers\\flexcomm\\fsl_usart.c", "virtual-dir"=>"src:drivers:flexcomm"}, {"source"=>"src\\drivers\\flexcomm\\fsl_i2c.c", "virtual-dir"=>"src:drivers:flexcomm"}, {"
+
+source"=>"src\\drivers\\flexcomm\\fsl_spi.c", "virtual-dir"=>"src:drivers:flexcomm"}, {"source"=>"src\\memory\\src\\sram_init_lpc.c", "virtual-dir"=>"src:memory:src"}, {"source"=>"src\\platform\\devic
+
+es\\LPC54114\\fsl_clock.c", "virtual-dir"=>"src:platform"}, {"source"=>"src\\platform\\devices\\LPC54114\\fsl_power.c", "virtual-dir"=>"src:platform"}, {"source"=>"src\\platform\\devices\\LPC54114\\fs
+
+l_power_lib\\fsl_power_lib.c", "virtual-dir"=>"src:platform"}, {"source"=>"src\\platform\\devices\\LPC54114\\fsl_reset.c", "virtual-dir"=>"src:platform"}, {"source"=>"src\\usb\\device\\class\\usb_devi
+
+ce_class.h", "virtual-dir"=>"src:usb:device:calss"}, {"source"=>"src\\usb\\device\\class\\usb_device_class.c", "virtual-dir"=>"src:usb:device:calss"}, {"source"=>"src\\usb\\device\\class\\usb_device_h
+
+id.h", "virtual-dir"=>"src:usb:device:calss"}, {"source"=>"src\\usb\\device\\class\\usb_device_hid.c", "virtual-dir"=>"src:usb:device:calss"}, {"source"=>"src\\usb\\device\\class\\usb_device_msc.h", "
+
+virtual-dir"=>"src:usb:device:calss"}, {"source"=>"src\\usb\\device\\class\\usb_device_msc.c", "virtual-dir"=>"src:usb:device:calss"}, {"source"=>"src\\usb\\device\\class\\usb_device_msc_ufi.h", "virt
+
+ual-dir"=>"src:usb:device:calss"}, {"source"=>"src\\usb\\device\\class\\usb_device_msc_ufi.c", "virtual-dir"=>"src:usb:device:calss"}, {"source"=>"src\\usb\\device\\usb_device.h", "virtual-dir"=>"src:
+
+usb:device"}, {"source"=>"src\\usb\\device\\usb_device_ch9.c", "virtual-dir"=>"src:usb:device"}, {"source"=>"src\\usb\\device\\usb_device_ch9.h", "virtual-dir"=>"src:usb:device"}, {"source"=>"src\\usb
+
+\\device\\usb_device_dci.c", "virtual-dir"=>"src:usb:device"}, {"source"=>"src\\usb\\device\\usb_device_dci.h", "virtual-dir"=>"src:usb:device"}, {"source"=>"src\\usb\\device\\usb_device_lpcip3511.c",
+
+ "virtual-dir"=>"src:usb:device"}, {"source"=>"src\\usb\\device\\usb_device_lpcip3511.h", "virtual-dir"=>"src:usb:device"}, {"source"=>"src\\usb\\include\\usb.h", "virtual-dir"=>"src:usb:include"}, {"
+
+source"=>"src\\usb\\osa\\usb_osa.h", "virtual-dir"=>"src:usb:osa"}, {"source"=>"src\\usb\\osa\\usb_osa_bm.h", "virtual-dir"=>"src:usb:osa"}, {"source"=>"src\\usb\\osa\\usb_osa_bm.c", "virtual-dir"=>"s
+
+rc:usb:osa"}, {"source"=>"src\\bm_usb\\bootloader_hid_report_ids.h", "virtual-dir"=>"src:usb:bm_composite"}, {"source"=>"src\\bm_usb\\fat_directory_entry.h", "virtual-dir"=>"src:usb:bm_composite"}, {"
+
+source"=>"src\\bm_usb\\composite.h", "virtual-dir"=>"src:usb:bm_composite"}, {"source"=>"src\\bm_usb\\composite.c", "virtual-dir"=>"src:usb:bm_composite"}, {"source"=>"src\\bm_usb\\hid_bootloader.h", 
+
+"virtual-dir"=>"src:usb:bm_composite"}, {"source"=>"src\\bm_usb\\hid_bootloader.c", "virtual-dir"=>"src:usb:bm_composite"}, {"source"=>"src\\bm_usb\\msc_disk.h", "virtual-dir"=>"src:usb:bm_composite"}
+
+, {"source"=>"src\\bm_usb\\msc_disk.c", "virtual-dir"=>"src:usb:bm_composite"}, {"source"=>"src\\bm_usb\\usb_descriptor.h", "virtual-dir"=>"src:usb:bm_composite"}, {"source"=>"src\\bm_usb\\usb_descrip
+
+tor.c", "virtual-dir"=>"src:usb:bm_composite"}, {"source"=>"targets\\LPC54114\\src\\usb_device_config.h", "virtual-dir"=>"src:usb:bm_composite"}, {"source"=>"src\\autobaud\\autobaud.h", "virtual-dir"=
+
+>"src:autobaud"}, {"source"=>"src\\bootloader\\bl_peripheral_interface.h", "virtual-dir"=>"src:bootloader"}, {"source"=>"src\\bootloader\\bl_user_entry.h", "virtual-dir"=>"src:bootloader"}, {"source"=
+
+>"src\\bootloader\\bl_version.h", "virtual-dir"=>"src:bootloader"}, {"source"=>"src\\bootloader\\bootloader.h", "virtual-dir"=>"src:bootloader"}, {"source"=>"src\\bootloader\\bl_command.h", "virtual-d
+
+ir"=>"src:bootloader"}, {"source"=>"src\\bootloader\\bl_context.h", "virtual-dir"=>"src:bootloader"}, {"source"=>"src\\bootloader\\bl_peripheral.h", "virtual-dir"=>"src:bootloader"}, {"source"=>"src\\
+
+bootloader\\bl_shutdown_cleanup.h", "virtual-dir"=>"src:bootloader"}, {"source"=>"src\\bootloader\\src\\bl_user_entry.c", "virtual-dir"=>"src:bootloader:src"}, {"source"=>"src\\bootloader\\src\\bl_mai
+
+n.c", "virtual-dir"=>"src:bootloader:src"}, {"source"=>"src\\bootloader\\src\\bl_context.c", "virtual-dir"=>"src:bootloader:src"}, {"source"=>"src\\bootloader\\src\\bl_exception_handler.c", "virtual-d
+
+ir"=>"src:bootloader:src"}, {"source"=>"src\\bootloader\\src\\bl_tree_root.c", "virtual-dir"=>"src:bootloader:src"}, {"source"=>"src\\bootloader\\src\\bl_command.c", "virtual-dir"=>"src:bootloader:src
+
+"}, {"source"=>"src\\bootloader\\src\\bl_shutdown_cleanup.c", "virtual-dir"=>"src:bootloader:src"}, {"source"=>"src\\crc\\crc16.h", "virtual-dir"=>"src:crc"}, {"source"=>"src\\crc\\crc32.h", "virtual-
+
+dir"=>"src:crc"}, {"source"=>"src\\crc\\src\\crc16.c", "virtual-dir"=>"src:crc:src"}, {"source"=>"src\\crc\\src\\crc32.c", "virtual-dir"=>"src:crc:src"}, {"source"=>"src\\drivers\\lpc_iocon\\fsl_iocon
+
+.h", "virtual-dir"=>"src:drivers:iocon"}, {"source"=>"src\\drivers\\lpc_gpio\\fsl_gpio.c", "virtual-dir"=>"src:drivers:gpio"}, {"source"=>"src\\drivers\\gint\\fsl_gint.c", "virtual-dir"=>"src:drivers:
+
+gint"}, {"source"=>"src\\drivers\\flashiap\\fsl_flashiap.c", "virtual-dir"=>"src:drivers:flashiap"}, {"source"=>"src\\drivers\\flashiap\\fsl_flashiap.h", "virtual-dir"=>"src:drivers:flashiap"}, {"sour
+
+ce"=>"src\\drivers\\flashiap_wrapper\\fsl_flashiap_wrapper.c", "virtual-dir"=>"src:drivers:flashiap_wrapper"}, {"source"=>"src\\drivers\\flashiap_wrapper\\fsl_flashiap_wrapper.h", "virtual-dir"=>"src:
+
+drivers:flashiap_wrapper"}, {"source"=>"src\\drivers\\microseconds\\microseconds.h", "virtual-dir"=>"src:drivers:microseconds"}, {"source"=>"src\\include\\bootloader_common.h", "virtual-dir"=>"src:inc
+
+lude"}, {"source"=>"src\\memory\\memory.h", "virtual-dir"=>"src:memory"}, {"source"=>"src\\memory\\src\\memory.c", "virtual-dir"=>"src:memory:src"}, {"source"=>"src\\memory\\src\\device_memory.h", "vi
+
+rtual-dir"=>"src:memory:src"}, {"source"=>"src\\memory\\src\\device_memory.c", "virtual-dir"=>"src:memory:src"}, {"source"=>"src\\memory\\src\\flashiap_memory.h", "virtual-dir"=>"src:memory:src"}, {"s
+
+ource"=>"src\\memory\\src\\flashiap_memory.c", "virtual-dir"=>"src:memory:src"}, {"source"=>"src\\memory\\src\\normal_memory.h", "virtual-dir"=>"src:memory:src"}, {"source"=>"src\\memory\\src\\normal_
+
+memory.c", "virtual-dir"=>"src:memory:src"}, {"source"=>"src\\memory\\src\\pattern_fill.h", "virtual-dir"=>"src:memory:src"}, {"source"=>"src\\memory\\src\\pattern_fill.s", "virtual-dir"=>"src:memory:
+
+src"}, {"source"=>"src\\packet\\command_packet.h", "virtual-dir"=>"src:packet"}, {"source"=>"src\\packet\\serial_packet.h", "virtual-dir"=>"src:packet"}, {"source"=>"src\\packet\\src\\serial_packet.c"
+
+, "virtual-dir"=>"src:packet:src"}, {"source"=>"src\\property\\property.h", "virtual-dir"=>"src:property"}, {"source"=>"src\\property\\src\\property.c", "virtual-dir"=>"src:property:src"}, {"source"=>
+
+"src\\sbloader\\sbloader.h", "virtual-dir"=>"src:sbloader"}, {"source"=>"src\\sbloader\\src\\sbloader.c", "virtual-dir"=>"src:sbloader:src"}, {"source"=>"src\\startup\\startup.c", "virtual-dir"=>"src:
+
+startup"}, {"source"=>"src\\utilities\\fsl_rtos_abstraction.h", "virtual-dir"=>"src:utilities"}, {"source"=>"src\\utilities\\src\\fsl_assert.c", "virtual-dir"=>"src:utilities:src"}, {"source"=>"src\\u
+
+tilities\\src\\fsl_rtos_abstraction.c", "virtual-dir"=>"src:utilities:src"}], "document"=>{"board"=>"flashloader", "name"=>"flashloader"}}}}
+generate file: C:/Work/mcu-boot/targets/LPC54114/kds/flashloader_loader/.cproject
+
+generate file: C:/Work/mcu-boot/targets/LPC54114/kds/lpcxpresso_bootloader/.cproject
+
+generate file: C:/Work/mcu-boot/targets/LPC54114/kds/flashloader/.cproject
+
+generate file: C:/Work/mcu-boot/targets/LPC54114/iar/flashloader_loader/flashloader_loader.ewp
+
+generate file: C:/Work/mcu-boot/targets/LPC54114/iar/lpcxpresso_bootloader/lpcxpresso_bootloader.ewp
+
+generate file: C:/Work/mcu-boot/targets/LPC54114/iar/flashloader/flashloader.ewp
+
+generate file: C:/Work/mcu-boot/targets/LPC54114/mdk/flashloader_loader/flashloader_loader.uvprojx
+
+generate file: C:/Work/mcu-boot/targets/LPC54114/mdk/lpcxpresso_bootloader/lpcxpresso_bootloader.uvprojx
+
+generate file: C:/Work/mcu-boot/targets/LPC54114/mdk/flashloader/flashloader.uvprojx
+
+success press enter key to quit
+
