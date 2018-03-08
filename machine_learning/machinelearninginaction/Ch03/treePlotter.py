@@ -3,6 +3,11 @@ Created on Oct 14, 2010
 
 @author: Peter Harrington
 '''
+
+import sys
+reload(sys)
+sys.setdefaultencoding('utf-8')
+
 import matplotlib.pyplot as plt
 
 decisionNode = dict(boxstyle="sawtooth", fc="0.8")
@@ -59,25 +64,25 @@ def plotTree(myTree, parentPt, nodeTxt):#if the first key tells you what feat wa
     plotTree.yOff = plotTree.yOff + 1.0/plotTree.totalD
 #if you do get a dictonary you know it's a tree, and the first element will be another dict
 
-def createPlot(inTree):
-    fig = plt.figure(1, facecolor='white')
-    fig.clf()
-    axprops = dict(xticks=[], yticks=[])
-    createPlot.ax1 = plt.subplot(111, frameon=False, **axprops)    #no ticks
-    #createPlot.ax1 = plt.subplot(111, frameon=False) #ticks for demo puropses 
-    plotTree.totalW = float(getNumLeafs(inTree))
-    plotTree.totalD = float(getTreeDepth(inTree))
-    plotTree.xOff = -0.5/plotTree.totalW; plotTree.yOff = 1.0;
-    plotTree(inTree, (0.5,1.0), '')
-    plt.show()
+# def createPlot(inTree):
+#     fig = plt.figure(1, facecolor='white')
+#     fig.clf()
+#     axprops = dict(xticks=[], yticks=[])
+#     createPlot.ax1 = plt.subplot(111, frameon=False, **axprops)    #no ticks
+#     #createPlot.ax1 = plt.subplot(111, frameon=False) #ticks for demo puropses
+#     plotTree.totalW = float(getNumLeafs(inTree))
+#     plotTree.totalD = float(getTreeDepth(inTree))
+#     plotTree.xOff = -0.5/plotTree.totalW; plotTree.yOff = 1.0;
+#     plotTree(inTree, (0.5,1.0), '')
+#     plt.show()
 
-#def createPlot():
-#    fig = plt.figure(1, facecolor='white')
-#    fig.clf()
-#    createPlot.ax1 = plt.subplot(111, frameon=False) #ticks for demo puropses 
-#    plotNode('a decision node', (0.5, 0.1), (0.1, 0.5), decisionNode)
-#    plotNode('a leaf node', (0.8, 0.1), (0.3, 0.8), leafNode)
-#    plt.show()
+def createPlot():
+   fig = plt.figure(1, facecolor='white')
+   fig.clf()
+   createPlot.ax1 = plt.subplot(111, frameon=False) #ticks for demo puropses
+   plotNode('a decision node', (0.5, 0.1), (0.1, 0.5), decisionNode)
+   plotNode('a leaf node', (0.8, 0.1), (0.3, 0.8), leafNode)
+   plt.show()
 
 def retrieveTree(i):
     listOfTrees =[{'no surfacing': {0: 'no', 1: {'flippers': {0: 'no', 1: 'yes'}}}},
@@ -85,4 +90,5 @@ def retrieveTree(i):
                   ]
     return listOfTrees[i]
 
-#createPlot(thisTree)
+thisTree = retrieveTree(0)
+createPlot()
